@@ -1,0 +1,3 @@
+C:\Users\Christoph\Documents\Unreal Projects\MyProject\Source\MyProject\MyProject.Build.cs
+C:\Users\Christoph\Documents\Unreal Projects\MyProject\Source\MyProject.Target.cs
+C:\Users\Christoph\Documents\Unreal Projects\MyProject\Source\MyProjectEditor.Target.cs
