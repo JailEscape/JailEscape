@@ -1,0 +1,1620 @@
+﻿Log file open, 12/08/17 11:49:52
+LogInit:Display: Running engine for game: MyProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1167169002) SRandInit(1167169002).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.386197
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.12.08-10.49.56:203][  0]LogInit: Selected Device Profile: [Windows]
+[2017.12.08-10.49.56:203][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.12.08-10.49.56:257][  0]LogInit: Computer: LENOVO-PC
+[2017.12.08-10.49.56:257][  0]LogInit: User: Admin
+[2017.12.08-10.49.56:258][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.12.08-10.49.56:258][  0]LogInit: High frequency timer resolution =2.436852 MHz
+[2017.12.08-10.49.56:259][  0]LogMemory: Memory total: Physical=7.2GB (8GB approx)
+[2017.12.08-10.49.56:259][  0]LogMemory: Platform Memory Stats for Windows
+[2017.12.08-10.49.56:259][  0]LogMemory: Process Physical Memory: 272.16 MB used, 272.16 MB peak
+[2017.12.08-10.49.56:259][  0]LogMemory: Process Virtual Memory: 258.66 MB used, 258.66 MB peak
+[2017.12.08-10.49.56:259][  0]LogMemory: Physical Memory: 5373.38 MB used,  2009.98 MB free, 7383.36 MB total
+[2017.12.08-10.49.56:259][  0]LogMemory: Virtual Memory: 621.54 MB used,  2009.98 MB free, 134217728.00 MB total
+[2017.12.08-10.49.56:945][  0]LogInit: Using OS detected language (de-DE).
+[2017.12.08-10.49.56:945][  0]LogInit: Using OS detected locale (de-DE).
+[2017.12.08-10.49.56:960][  0]LogTextLocalizationManager: No localization for 'de-DE' exists, so 'en' will be used for the language.
+[2017.12.08-10.49.56:962][  0]LogTextLocalizationManager: No localization for 'de-DE' exists, so 'en' will be used for the locale.
+[2017.12.08-10.50.01:198][  0]LogD3D11RHI: D3D11 adapters:
+[2017.12.08-10.50.01:238][  0]LogD3D11RHI:    0. 'AMD Radeon HD 8650G + HD 8570M Dual Graphics' (Feature Level 11_0)
+[2017.12.08-10.50.01:238][  0]LogD3D11RHI:       2773/0/3456 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.12.08-10.50.01:243][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.12.08-10.50.01:243][  0]LogD3D11RHI:       0/0/3691 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.12.08-10.50.01:243][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.12.08-10.50.01:273][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.12.08-10.50.01:273][  0]LogD3D11RHI:     GPU DeviceId: 0x990b (for the marketing name, search the web for "GPU Device Id")
+[2017.12.08-10.50.01:273][  0]LogWindows: EnumDisplayDevices:
+[2017.12.08-10.50.01:273][  0]LogWindows:    0. 'AMD Radeon HD 8650G + HD 8570M Dual Graphics' (P:1 D:1)
+[2017.12.08-10.50.01:275][  0]LogWindows:    1. 'AMD Radeon HD 8650G + HD 8570M Dual Graphics' (P:0 D:0)
+[2017.12.08-10.50.01:277][  0]LogWindows:    2. 'AMD Radeon HD 8650G + HD 8570M Dual Graphics' (P:0 D:0)
+[2017.12.08-10.50.01:278][  0]LogWindows:    3. 'AMD Radeon HD 8650G + HD 8570M Dual Graphics' (P:0 D:0)
+[2017.12.08-10.50.01:279][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.12.08-10.50.01:279][  0]LogD3D11RHI:     Adapter Name: AMD Radeon HD 8650G + HD 8570M Dual Graphics
+[2017.12.08-10.50.01:280][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.12.08-10.50.01:280][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.12.08-10.50.01:280][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.12.08-10.50.01:390][  0]LogD3D11RHI: AMD Pre GCN architecture detected, some driver workarounds will be in place
+[2017.12.08-10.50.01:419][  0]LogD3D11RHI: Async texture creation enabled
+[2017.12.08-10.50.01:437][  0]LogD3D11RHI: GPU Timing Frequency: 50.000000 (Debug: 2 1)
+[2017.12.08-10.50.01:441][  0]LogShaderCompilers: Guid format shader working directory is -10 characters bigger than the processId version (../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Intermediate/Shaders/WorkingDirectory/14356/).
+[2017.12.08-10.50.01:442][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Admin/AppData/Local/Temp/UnrealShaderWorkingDir/A6B26ECE42D014E068F87A8B4EA5F413/'.
+[2017.12.08-10.50.01:442][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.12.08-10.50.08:153][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.12.08-10.50.08:563][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.12.08-10.50.09:015][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.12.08-10.50.09:464][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.12.08-10.50.09:904][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.12.08-10.50.10:343][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.12.08-10.50.10:810][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.12.08-10.50.11:257][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.12.08-10.50.11:697][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.12.08-10.50.12:124][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.12.08-10.50.12:592][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.12.08-10.50.13:021][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.12.08-10.50.13:444][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.12.08-10.50.13:844][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.12.08-10.50.14:279][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.12.08-10.50.15:082][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.12.08-10.50.15:082][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.12.08-10.50.15:450][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.12.08-10.50.16:037][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.12.08-10.50.16:295][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.12.08-10.50.16:773][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.12.08-10.50.17:201][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.12.08-10.50.17:599][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.12.08-10.50.18:020][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.12.08-10.50.18:020][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.12.08-10.50.22:142][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.12.08-10.50.22:552][  0]LogDerivedDataCache: Loaded boot cache 0.41s 90MB C:/Users/Admin/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.12.08-10.50.22:552][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Admin/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.12.08-10.50.22:553][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.12.08-10.50.22:553][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.12.08-10.50.22:553][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.12.08-10.50.22:553][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.12.08-10.50.22:614][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.12.08-10.50.22:630][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.12.08-10.50.22:680][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.12.08-10.50.22:680][  0]LogSlate: Using Freetype 2.6.0
+[2017.12.08-10.50.22:683][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.12.08-10.50.22:683][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.12.08-10.50.24:398][  0]LogInit: Selected Device Profile: [Windows]
+[2017.12.08-10.50.24:756][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.12.08-10.50.25:733][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.12.08-10.50.26:155][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.12.08-10.50.26:614][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.12.08-10.50.26:614][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.12.08-10.50.26:614][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.12.08-10.50.29:992][  0]LogNetVersion: MyProject , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 1111101373)
+[2017.12.08-10.50.30:278][  0]LogAssetRegistry: FAssetRegistry took 0.0361 seconds to start up
+[2017.12.08-10.50.30:651][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 1 prioritized culture(s) in 0.148107 seconds
+[2017.12.08-10.50.30:669][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.12.08-10.50.30:669][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.12.08-10.50.30:669][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.12.08-10.50.31:258][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.12.08-10.50.57:675][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.12.08-10.50.57:963][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.12.08-10.51.04:513][  0]LogTexture:Display: Building textures: grunge_texture_overlay_png_by_fictionchick-d73ass0 (AutoDXT, 800X800)
+[2017.12.08-10.51.15:721][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.12.08-10.51.18:748][  0]SourceControl: Info Source control is disabled
+[2017.12.08-10.51.19:027][  0]SourceControl: Info Source control is disabled
+[2017.12.08-10.51.19:384][  0]SourceControl: Info Source control is disabled
+[2017.12.08-10.51.19:764][  0]SourceControl: Info Source control is disabled
+[2017.12.08-10.51.24:832][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.12.08-10.51.29:297][  0]LogEngine: Initializing Engine...
+[2017.12.08-10.51.29:302][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.12.08-10.51.30:175][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.12.08-10.51.30:175][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.12.08-10.51.31:114][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.12.08-10.51.31:136][  0]LogInit: XAudio2 using 'Lautsprecher (Conexant SmartAudio HD)' : 2 channels at 44.1 kHz using 32 bits per sample (channel mask 0x3)
+[2017.12.08-10.51.31:209][  0]LogInit: FAudioDevice initialized.
+[2017.12.08-10.51.31:393][  0]LogDerivedDataCache: Saved boot cache 0.18s 90MB C:/Users/Admin/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.12.08-10.51.31:456][  0]LogInit: Texture streaming: Enabled
+[2017.12.08-10.51.32:206][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.12.08-10.51.34:206][  0]LogInit: Transaction tracking system initialized
+[2017.12.08-10.51.36:875][  0]BlueprintLog: New page: Editor Load
+[2017.12.08-10.51.44:493][  0]LocalizationService: Info Localization service is disabled
+[2017.12.08-10.51.52:611][  0]LogConsoleResponse:Display: 
+[2017.12.08-10.51.53:316][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.12.08-10.51.53:316][  0]LogCook:Display: Mobile HDR setting 1
+[2017.12.08-10.51.53:903][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/GitHub/JailEscape/Content/' took 0.03s
+[2017.12.08-10.52.02:233][  0]SourceControl: Info Source control is disabled
+[2017.12.08-10.52.02:233][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.12.08-10.52.02:237][  0]LightingResults: New page: Lighting Build
+[2017.12.08-10.52.02:607][  0]MapCheck: New page: Map Check
+[2017.12.08-10.52.02:607][  0]LightingResults: New page: Lighting Build
+[2017.12.08-10.52.03:488][  0]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 2048X2048)
+[2017.12.08-10.52.07:430][  0]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 2048X2048)
+[2017.12.08-10.52.11:625][  0]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 2048X2048)
+[2017.12.08-10.52.16:467][  0]LogTexture:Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 2048X2048)
+[2017.12.08-10.52.18:290][  0]LogTexture:Display: Building textures: HQ_Lightmap0_5 (AutoDXT, 64X64)
+[2017.12.08-10.52.18:405][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 2048X2048)
+[2017.12.08-10.52.19:342][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1, 2048X2048)
+[2017.12.08-10.52.20:298][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1, 2048X2048)
+[2017.12.08-10.52.21:142][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_4 (DXT1, 2048X2048)
+[2017.12.08-10.52.21:811][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_5 (DXT1, 64X64)
+[2017.12.08-10.52.21:921][  0]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT, 2048X1024)
+[2017.12.08-10.52.23:194][  0]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT, 2048X1024)
+[2017.12.08-10.52.24:404][  0]LogTexture:Display: Building textures: SkyOcclusion0_3 (AutoDXT, 2048X1024)
+[2017.12.08-10.52.25:992][  0]LogTexture:Display: Building textures: SkyOcclusion0_4 (AutoDXT, 2048X1024)
+[2017.12.08-10.52.26:925][  0]LogTexture:Display: Building textures: SkyOcclusion0_5 (AutoDXT, 64X32)
+[2017.12.08-10.52.26:942][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8, 1024X1024)
+[2017.12.08-10.52.27:076][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8, 1024X1024)
+[2017.12.08-10.52.27:211][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8, 1024X1024)
+[2017.12.08-10.52.27:327][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8, 1024X1024)
+[2017.12.08-10.52.27:433][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_4 (G8, 1024X1024)
+[2017.12.08-10.52.27:549][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_5 (G8, 1024X1024)
+[2017.12.08-10.52.27:642][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_6 (G8, 1024X1024)
+[2017.12.08-10.52.27:750][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_7 (G8, 32X32)
+[2017.12.08-10.52.27:972][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.12.08-10.52.27:997][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.12.08-10.52.28:095][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.12.08-10.52.28:465][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 369.977ms to complete.
+[2017.12.08-10.52.28:465][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 26.232
+[2017.12.08-10.52.29:054][  0]LogCollectionManager: Loaded 0 collections in 0.002966 seconds
+[2017.12.08-10.52.29:354][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/GitHub/JailEscape/Saved/Collections/' took 0.01s
+[2017.12.08-10.52.29:354][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/GitHub/JailEscape/Content/Developers/Admin/Collections/' took 0.01s
+[2017.12.08-10.52.29:354][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/GitHub/JailEscape/Content/Collections/' took 0.01s
+[2017.12.08-10.52.29:354][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.12.08-10.52.29:389][  0]LogContentBrowser: Native class hierarchy populated in 0.0341 seconds. Added 2334 classes and 495 folders.
+[2017.12.08-10.52.29:771][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0085 seconds. Added 0 classes and 0 folders.
+[2017.12.08-10.52.30:096][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0086 seconds. Added 0 classes and 0 folders.
+[2017.12.08-10.52.30:294][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.12.08-10.52.30:308][  0]LogSlate: Took 0.005414 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.12.08-10.52.30:327][  0]LogSlate: Took 0.002817 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.12.08-10.52.30:335][  0]LogSlate: Took 0.002330 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.12.08-10.52.30:573][  0]LogRenderer: Reallocating scene render targets to support 840x420 NumSamples 1 (Frame:1).
+[2017.12.08-10.52.31:343][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.12.08-10.52.31:634][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0051 seconds. Added 1 classes and 2 folders.
+[2017.12.08-10.52.31:635][  0]LogLoad: (Engine Initialization) Total time: 169.87 seconds
+[2017.12.08-10.52.31:635][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.84 seconds
+[2017.12.08-10.52.31:635][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.12.08-10.52.31:635][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.12.08-10.52.31:649][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.12.08-10.52.31:656][  0]LogOcInput: OculusInput pre-init called
+[2017.12.08-10.52.31:656][  0]LogHMD: Starting GearVRController plugin
+[2017.12.08-10.52.31:727][  0]LogContentStreaming: Texture pool size now 400 MB
+[2017.12.08-10.52.31:849][  0]LogSlate: Took 0.002198 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.08-10.52.32:463][  4]LogAssetRegistry: Asset discovery search completed in 122.2079 seconds
+[2017.12.08-10.52.32:476][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.12.08-10.52.32:476][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000091 seconds (updated 0 objects)
+[2017.12.08-10.54.16:533][258]LogSlate: Took 0.000545 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.08-10.54.16:666][258]LogSlate: Took 0.004853 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.12.08-10.54.24:908][584]Running C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" -game -rocket -progress
+[2017.12.08-10.54.25:833][584]Discovering modules, targets and source code for project...
+[2017.12.08-10.54.35:101][584]LogSlate: Took 0.001071 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.12.08-10.54.39:698][584]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2017.12.08-10.54.39:723][584]Candidate modules for hot reload:
+[2017.12.08-10.54.39:723][584]  MyProject
+[2017.12.08-10.54.39:723][584]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 8191 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-10.55.44:451][584]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 12:55:44 PM
+[2017.12.08-10.55.44:451][584]CompilerResultsLog: Info Performing full C++ include scan (hot reloading a new target)
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 21,9006443 seconds
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info Performing 11 actions (4 in parallel)
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info MyProject.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info Lock.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info CEnemyAI.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info MyProjectCharacter.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info MyProjectHUD.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info MyProjectGameMode.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info MyProjectProjectile.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info [9/11] Resource PCLaunch.rc
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info [10/11] Link UE4Editor-MyProject-8191.dll
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info [11/11] Link UE4Editor-MyProject-8191.lib
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8191.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8191.exp" werden erstellt.
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8191.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8191.suppressed.exp" werden erstellt.
+[2017.12.08-10.55.44:452][584]CompilerResultsLog: Info Total build time: 63,95 seconds (Local executor: 19,58 seconds)
+[2017.12.08-10.55.44:452][584]LogMainFrame: MainFrame: Module compiling took 64.740 seconds
+[2017.12.08-10.55.44:918][584]LogClass: Could not find existing class CEnemyAI in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-10.55.44:918][584]LogClass: Could not find existing class Lock in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-10.55.44:918][584]LogClass: Could not find existing class MyProjectCharacter in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-10.55.44:933][584]LogHotReload: Re-instancing MyProjectCharacter after hot-reload.
+[2017.12.08-10.55.45:409][584]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0041 seconds. Added 6 classes and 2 folders.
+[2017.12.08-10.55.45:412][584]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-10.55.45:537][584]LogContentBrowser: Native class hierarchy populated in 0.0350 seconds. Added 2337 classes and 497 folders.
+[2017.12.08-10.55.45:540][584]Display: HotReload took 65.9s.
+[2017.12.08-10.55.45:543][584]Warning: HotReload operation took 65.9s.
+[2017.12.08-10.55.45:677][584]LogHotReload: New module detected: UE4Editor-MyProject-8191.dll
+[2017.12.08-10.55.45:779][585]LogHotReload: Starting Hot-Reload from IDE
+[2017.12.08-10.55.46:391][585]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0115 seconds. Added 6 classes and 2 folders.
+[2017.12.08-10.55.46:395][585]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.12.08-10.55.46:454][585]LogContentBrowser: Native class hierarchy populated in 0.0505 seconds. Added 2337 classes and 497 folders.
+[2017.12.08-10.55.46:460][585]Display: HotReload took  0.7s.
+[2017.12.08-10.56.14:162][815]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/Lock.h'
+[2017.12.08-10.56.14:915][815]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/Lock.cpp'
+[2017.12.08-10.57.24:637][910]Running C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject Win64 Development -editorrecompile "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" -invalidatemakefilesonly
+[2017.12.08-10.57.25:971][910]Invalidating makefiles only in this run.
+[2017.12.08-10.57.26:112][910]Candidate modules for hot reload:
+[2017.12.08-10.57.26:112][910]  MyProject
+[2017.12.08-10.57.26:113][910]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 8541 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-11.03.00:180][910]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 1:03:00 PM
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 38,4407592 seconds
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info CellDoor.cpp
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info [3/4] Link UE4Editor-MyProject-8541.dll
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info [4/4] Link UE4Editor-MyProject-8541.lib
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8541.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8541.suppressed.exp" werden erstellt.
+[2017.12.08-11.03.00:182][910]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8541.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8541.exp" werden erstellt.
+[2017.12.08-11.03.00:183][910]CompilerResultsLog: Info Total build time: 332,97 seconds (Local executor: 263,23 seconds)
+[2017.12.08-11.03.00:183][910]LogMainFrame: MainFrame: Module compiling took 334.075 seconds
+[2017.12.08-11.03.00:889][910]LogClass: Could not find existing class CellDoor in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.03.00:935][910]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0089 seconds. Added 7 classes and 2 folders.
+[2017.12.08-11.03.00:943][910]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.03.01:127][910]LogContentBrowser: Native class hierarchy populated in 0.1073 seconds. Added 2338 classes and 497 folders.
+[2017.12.08-11.03.01:127][910]Display: HotReload took 335.0s.
+[2017.12.08-11.03.01:129][910]Warning: HotReload operation took 335.0s.
+[2017.12.08-11.03.01:917][910]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/CellDoor.h'
+[2017.12.08-11.03.02:643][910]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/CellDoor.cpp'
+[2017.12.08-11.03.03:105][911]LogHotReload: New module detected: UE4Editor-MyProject-8541.dll
+[2017.12.08-11.03.03:263][912]LogHotReload: Starting Hot-Reload from IDE
+[2017.12.08-11.03.03:994][912]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0142 seconds. Added 7 classes and 2 folders.
+[2017.12.08-11.03.03:998][912]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.03.04:081][912]LogContentBrowser: Native class hierarchy populated in 0.0755 seconds. Added 2338 classes and 497 folders.
+[2017.12.08-11.03.04:094][912]Display: HotReload took  0.8s.
+[2017.12.08-11.05.10:888][757]EditorErrors: New page: Actor attachment
+[2017.12.08-11.05.22:535][115]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.22:570][115]LogEditorActor: Deleted 1 Actors (0.038 secs)
+[2017.12.08-11.05.24:274][167]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.24:309][167]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2017.12.08-11.05.32:884][460]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.32:947][460]LogEditorActor: Deleted 1 Actors (0.065 secs)
+[2017.12.08-11.05.33:706][480]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.33:742][480]LogEditorActor: Deleted 1 Actors (0.037 secs)
+[2017.12.08-11.05.34:377][499]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.34:442][499]LogEditorActor: Deleted 1 Actors (0.066 secs)
+[2017.12.08-11.05.35:080][518]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.35:141][518]LogEditorActor: Deleted 1 Actors (0.064 secs)
+[2017.12.08-11.05.35:748][536]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.35:809][536]LogEditorActor: Deleted 1 Actors (0.064 secs)
+[2017.12.08-11.05.38:434][630]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.38:495][630]LogEditorActor: Deleted 1 Actors (0.062 secs)
+[2017.12.08-11.05.39:002][644]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.39:082][644]LogEditorActor: Deleted 1 Actors (0.082 secs)
+[2017.12.08-11.05.39:942][672]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.39:976][672]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2017.12.08-11.05.43:160][788]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.43:237][788]LogEditorActor: Deleted 1 Actors (0.078 secs)
+[2017.12.08-11.05.44:272][823]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.44:331][823]LogEditorActor: Deleted 1 Actors (0.060 secs)
+[2017.12.08-11.05.45:615][861]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.45:693][861]LogEditorActor: Deleted 1 Actors (0.079 secs)
+[2017.12.08-11.05.46:714][888]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.12.08-11.05.46:762][888]LogEditorActor: Deleted 1 Actors (0.050 secs)
+[2017.12.08-11.06.28:777][818]Running C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject Win64 Development -editorrecompile "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" -invalidatemakefilesonly
+[2017.12.08-11.06.30:103][818]Invalidating makefiles only in this run.
+[2017.12.08-11.06.30:258][818]Candidate modules for hot reload:
+[2017.12.08-11.06.30:258][818]  MyProject
+[2017.12.08-11.06.30:259][818]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 1510 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-11.08.30:852][818]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 1:08:30 PM
+[2017.12.08-11.08.30:852][818]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 39,8772957 seconds
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info PaperCutCell.cpp
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info [3/4] Link UE4Editor-MyProject-1510.dll
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info [4/4] Link UE4Editor-MyProject-1510.lib
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-1510.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-1510.exp" werden erstellt.
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-1510.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-1510.suppressed.exp" werden erstellt.
+[2017.12.08-11.08.30:853][818]CompilerResultsLog: Info Total build time: 119,52 seconds (Local executor: 44,98 seconds)
+[2017.12.08-11.08.30:853][818]LogMainFrame: MainFrame: Module compiling took 120.599 seconds
+[2017.12.08-11.08.31:460][818]LogClass: Could not find existing class PaperCutCell in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.08.31:494][818]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0078 seconds. Added 8 classes and 2 folders.
+[2017.12.08-11.08.31:506][818]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.08.31:726][818]LogContentBrowser: Native class hierarchy populated in 0.1008 seconds. Added 2339 classes and 497 folders.
+[2017.12.08-11.08.31:726][818]Display: HotReload took 121.5s.
+[2017.12.08-11.08.31:729][818]Warning: HotReload operation took 121.5s.
+[2017.12.08-11.08.32:328][818]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/PaperCutCell.h'
+[2017.12.08-11.08.32:716][818]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/PaperCutCell.cpp'
+[2017.12.08-11.08.32:944][818]LogHotReload: New module detected: UE4Editor-MyProject-1510.dll
+[2017.12.08-11.08.33:320][819]LogHotReload: Starting Hot-Reload from IDE
+[2017.12.08-11.08.34:155][819]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0948 seconds. Added 8 classes and 2 folders.
+[2017.12.08-11.08.34:160][819]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.08.34:343][819]LogContentBrowser: Native class hierarchy populated in 0.1310 seconds. Added 2339 classes and 497 folders.
+[2017.12.08-11.08.34:358][819]Display: HotReload took  1.0s.
+[2017.12.08-11.08.34:725][820]LogSlate: Took 0.003237 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.08-11.08.46:083][847]LogSavePackage: Save=1826.53ms
+[2017.12.08-11.08.46:083][847]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMap_Auto1AEDEA36A4C7C869EAFF367913D8A4652.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto1.umap'
+[2017.12.08-11.08.46:134][847]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto1.umap
+[2017.12.08-11.08.46:154][847]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 2.177
+[2017.12.08-11.08.46:155][847]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 2.177
+[2017.12.08-11.09.38:891][ 49]Running C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject Win64 Development -editorrecompile "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" -invalidatemakefilesonly
+[2017.12.08-11.09.40:617][ 49]Invalidating makefiles only in this run.
+[2017.12.08-11.09.40:785][ 49]Candidate modules for hot reload:
+[2017.12.08-11.09.40:785][ 49]  MyProject
+[2017.12.08-11.09.40:786][ 49]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 8797 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-11.12.08:554][ 49]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 1:12:08 PM
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 41,4747949 seconds
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info PaperCutCellBlock.cpp
+[2017.12.08-11.12.08:555][ 49]CompilerResultsLog: Info [3/4] Link UE4Editor-MyProject-8797.dll
+[2017.12.08-11.12.08:556][ 49]CompilerResultsLog: Info [4/4] Link UE4Editor-MyProject-8797.lib
+[2017.12.08-11.12.08:556][ 49]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8797.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8797.exp" werden erstellt.
+[2017.12.08-11.12.08:556][ 49]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8797.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8797.suppressed.exp" werden erstellt.
+[2017.12.08-11.12.08:556][ 49]CompilerResultsLog: Info Total build time: 146,48 seconds (Local executor: 69,65 seconds)
+[2017.12.08-11.12.08:556][ 49]LogMainFrame: MainFrame: Module compiling took 147.781 seconds
+[2017.12.08-11.12.09:187][ 49]LogClass: Could not find existing class PaperCutCellBlock in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.12.09:227][ 49]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0134 seconds. Added 9 classes and 2 folders.
+[2017.12.08-11.12.09:231][ 49]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.12.09:436][ 49]LogContentBrowser: Native class hierarchy populated in 0.1004 seconds. Added 2340 classes and 497 folders.
+[2017.12.08-11.12.09:436][ 49]Display: HotReload took 148.7s.
+[2017.12.08-11.12.09:438][ 49]Warning: HotReload operation took 148.7s.
+[2017.12.08-11.12.10:128][ 49]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/PaperCutCellBlock.h'
+[2017.12.08-11.12.10:525][ 49]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/PaperCutCellBlock.cpp'
+[2017.12.08-11.12.11:013][ 50]LogHotReload: New module detected: UE4Editor-MyProject-8797.dll
+[2017.12.08-11.12.11:141][ 51]LogHotReload: Starting Hot-Reload from IDE
+[2017.12.08-11.12.11:717][ 51]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0247 seconds. Added 9 classes and 2 folders.
+[2017.12.08-11.12.11:729][ 51]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.12.11:822][ 51]LogContentBrowser: Native class hierarchy populated in 0.0713 seconds. Added 2340 classes and 497 folders.
+[2017.12.08-11.12.11:842][ 51]Display: HotReload took  0.7s.
+[2017.12.08-11.13.01:800][969]Running C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject Win64 Development -editorrecompile "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" -invalidatemakefilesonly
+[2017.12.08-11.13.03:435][969]Invalidating makefiles only in this run.
+[2017.12.08-11.13.03:598][969]Candidate modules for hot reload:
+[2017.12.08-11.13.03:598][969]  MyProject
+[2017.12.08-11.13.03:599][969]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 8447 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-11.14.43:591][969]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 1:14:43 PM
+[2017.12.08-11.14.43:591][969]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-11.14.43:591][969]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 40,1900168 seconds
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info PaperCutCellRow.cpp
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info [3/4] Link UE4Editor-MyProject-8447.dll
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info [4/4] Link UE4Editor-MyProject-8447.lib
+[2017.12.08-11.14.43:592][969]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8447.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8447.exp" werden erstellt.
+[2017.12.08-11.14.43:593][969]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8447.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-8447.suppressed.exp" werden erstellt.
+[2017.12.08-11.14.43:593][969]CompilerResultsLog: Info Total build time: 98,72 seconds (Local executor: 26,45 seconds)
+[2017.12.08-11.14.43:593][969]LogMainFrame: MainFrame: Module compiling took 100.008 seconds
+[2017.12.08-11.14.44:242][969]LogClass: Could not find existing class PaperCutCellRow in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.14.44:269][969]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0091 seconds. Added 10 classes and 2 folders.
+[2017.12.08-11.14.44:278][969]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.14.44:442][969]LogContentBrowser: Native class hierarchy populated in 0.0829 seconds. Added 2341 classes and 497 folders.
+[2017.12.08-11.14.44:442][969]Display: HotReload took 100.9s.
+[2017.12.08-11.14.44:445][969]Warning: HotReload operation took 100.9s.
+[2017.12.08-11.14.44:950][969]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/PaperCutCellRow.h'
+[2017.12.08-11.14.45:355][969]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/PaperCutCellRow.cpp'
+[2017.12.08-11.14.45:429][969]LogHotReload: New module detected: UE4Editor-MyProject-8447.dll
+[2017.12.08-11.14.45:595][970]LogHotReload: Starting Hot-Reload from IDE
+[2017.12.08-11.14.46:120][970]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0181 seconds. Added 10 classes and 2 folders.
+[2017.12.08-11.14.46:124][970]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.14.46:214][970]LogContentBrowser: Native class hierarchy populated in 0.0822 seconds. Added 2341 classes and 497 folders.
+[2017.12.08-11.14.46:221][970]Display: HotReload took  0.6s.
+[2017.12.08-11.15.26:253][828]Running C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject Win64 Development -editorrecompile "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" -invalidatemakefilesonly
+[2017.12.08-11.15.27:774][828]Invalidating makefiles only in this run.
+[2017.12.08-11.15.28:118][828]Candidate modules for hot reload:
+[2017.12.08-11.15.28:118][828]  MyProject
+[2017.12.08-11.15.28:119][828]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 439 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-11.16.50:976][828]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 1:16:50 PM
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 36,1059112 seconds
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info ShowerRoomDoor.cpp
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info [3/4] Link UE4Editor-MyProject-439.dll
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info [4/4] Link UE4Editor-MyProject-439.lib
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-439.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-439.exp" werden erstellt.
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-439.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-439.suppressed.exp" werden erstellt.
+[2017.12.08-11.16.50:977][828]CompilerResultsLog: Info Total build time: 81,65 seconds (Local executor: 15,29 seconds)
+[2017.12.08-11.16.50:977][828]LogMainFrame: MainFrame: Module compiling took 82.867 seconds
+[2017.12.08-11.16.51:510][828]LogClass: Could not find existing class ShowerRoomDoor in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.16.51:551][828]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0102 seconds. Added 11 classes and 2 folders.
+[2017.12.08-11.16.51:555][828]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.16.51:719][828]LogContentBrowser: Native class hierarchy populated in 0.0749 seconds. Added 2342 classes and 497 folders.
+[2017.12.08-11.16.51:719][828]Display: HotReload took 83.8s.
+[2017.12.08-11.16.51:722][828]Warning: HotReload operation took 83.8s.
+[2017.12.08-11.16.52:192][828]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/ShowerRoomDoor.h'
+[2017.12.08-11.16.52:615][828]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/ShowerRoomDoor.cpp'
+[2017.12.08-11.16.52:687][828]LogHotReload: New module detected: UE4Editor-MyProject-439.dll
+[2017.12.08-11.16.52:823][829]LogHotReload: Starting Hot-Reload from IDE
+[2017.12.08-11.16.53:409][829]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0161 seconds. Added 11 classes and 2 folders.
+[2017.12.08-11.16.53:414][829]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.16.53:483][829]LogContentBrowser: Native class hierarchy populated in 0.0606 seconds. Added 2342 classes and 497 folders.
+[2017.12.08-11.16.53:489][829]Display: HotReload took  0.7s.
+[2017.12.08-11.17.35:083][619]Running C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject Win64 Development -editorrecompile "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" -invalidatemakefilesonly
+[2017.12.08-11.17.36:605][619]Invalidating makefiles only in this run.
+[2017.12.08-11.17.36:926][619]Candidate modules for hot reload:
+[2017.12.08-11.17.36:926][619]  MyProject
+[2017.12.08-11.17.36:927][619]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 361 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 1:18:52 PM
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 32,6702315 seconds
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info ShowerRoomKey.cpp
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info [3/4] Link UE4Editor-MyProject-361.dll
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info [4/4] Link UE4Editor-MyProject-361.lib
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-361.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-361.exp" werden erstellt.
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-361.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-361.suppressed.exp" werden erstellt.
+[2017.12.08-11.18.52:453][619]CompilerResultsLog: Info Total build time: 74,36 seconds (Local executor: 11,68 seconds)
+[2017.12.08-11.18.52:454][619]LogMainFrame: MainFrame: Module compiling took 75.543 seconds
+[2017.12.08-11.18.52:963][619]LogClass: Could not find existing class ShowerRoomKey in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.18.53:007][619]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0137 seconds. Added 12 classes and 2 folders.
+[2017.12.08-11.18.53:011][619]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.18.53:156][619]LogContentBrowser: Native class hierarchy populated in 0.0605 seconds. Added 2343 classes and 497 folders.
+[2017.12.08-11.18.53:156][619]Display: HotReload took 76.4s.
+[2017.12.08-11.18.53:158][619]Warning: HotReload operation took 76.4s.
+[2017.12.08-11.18.53:518][619]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/ShowerRoomKey.h'
+[2017.12.08-11.18.53:519][619]LogVSAccessor:Warning: Couldn't open file 'C:/Users/Admin/Desktop/GitHub/JailEscape/Source/MyProject/ShowerRoomKey.cpp'.
+[2017.12.08-11.18.53:573][619]LogHotReload: New module detected: UE4Editor-MyProject-361.dll
+[2017.12.08-11.18.53:698][620]LogHotReload: Starting Hot-Reload from IDE
+[2017.12.08-11.18.54:228][620]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0100 seconds. Added 12 classes and 2 folders.
+[2017.12.08-11.18.54:232][620]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.18.54:311][620]LogContentBrowser: Native class hierarchy populated in 0.0662 seconds. Added 2343 classes and 497 folders.
+[2017.12.08-11.18.54:317][620]Display: HotReload took  0.6s.
+[2017.12.08-11.38.13:861][412]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0098 seconds. Added 112 classes and 0 folders.
+[2017.12.08-11.38.35:775][924]Candidate modules for hot reload:
+[2017.12.08-11.38.35:776][924]  MyProject
+[2017.12.08-11.38.35:776][924]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 9455 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-11.38.35:803][924]Warning: Starting HotReload took  0.1s.
+[2017.12.08-11.44.52:563][676]LogSlate: Took 0.006847 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.12.08-11.45.05:491][111]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 1:45:05 PM
+[2017.12.08-11.45.05:492][111]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-11.45.05:492][111]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 67,0545699 seconds
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info Performing 7 actions (4 in parallel)
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info ShowerRoomKey.cpp
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info Lock.cpp
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info CellDoor.cpp
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info PaperCutCellBlock.cpp
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info [6/7] Link UE4Editor-MyProject-9455.dll
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info [7/7] Link UE4Editor-MyProject-9455.lib
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9455.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9455.exp" werden erstellt.
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9455.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9455.suppressed.exp" werden erstellt.
+[2017.12.08-11.45.05:493][111]CompilerResultsLog: Info Total build time: 387,64 seconds (Local executor: 257,20 seconds)
+[2017.12.08-11.45.05:494][111]LogMainFrame: MainFrame: Module compiling took 389.725 seconds
+[2017.12.08-11.45.06:161][111]LogClass: Could not find existing class CellDoor in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.45.06:161][111]LogClass: Function IsLocked is new.
+[2017.12.08-11.45.06:162][111]LogClass: Function SetLocked is new.
+[2017.12.08-11.45.06:167][111]LogClass: Could not find existing class Lock in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.45.06:182][111]LogClass: Could not find existing class PaperCutCellBlock in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.45.06:187][111]LogClass: Could not find existing class ShowerRoomKey in package /Script/MyProject for HotReload, assuming new class
+[2017.12.08-11.45.06:188][111]LogClass: Function IsPickedUp is new.
+[2017.12.08-11.45.06:188][111]LogClass: Function SetPickedUp is new.
+[2017.12.08-11.45.06:223][111]LogHotReload: Re-instancing CellDoor after hot-reload.
+[2017.12.08-11.45.06:621][111]LogHotReload: Re-instancing Lock after hot-reload.
+[2017.12.08-11.45.06:957][111]LogHotReload: Re-instancing PaperCutCellBlock after hot-reload.
+[2017.12.08-11.45.07:251][111]LogHotReload: Re-instancing ShowerRoomKey after hot-reload.
+[2017.12.08-11.45.07:544][111]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0102 seconds. Added 12 classes and 2 folders.
+[2017.12.08-11.45.07:551][111]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2017.12.08-11.45.08:748][111]LogContentBrowser: Native class hierarchy populated in 0.0548 seconds. Added 2343 classes and 497 folders.
+[2017.12.08-11.45.08:749][111]Display: HotReload took 393.0s.
+[2017.12.08-11.47.52:222][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.CellDoor_BP:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:222][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.SKEL_CellDoor_BP_C:UserConstructionScript' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:222][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.SKEL_CellDoor_BP_C' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:222][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.CellDoor_BP_C:UserConstructionScript' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:222][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.CellDoor_BP_C' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:223][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.CellDoor_BP:EventGraph.K2Node_Event_0' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:223][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.CellDoor_BP:EventGraph.K2Node_Event_1' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:223][369]LogMetaData: Removing '/Game/Niklas/Blueprints/CellDoor_BP.CellDoor_BP:EventGraph.K2Node_Event_2' ref from Metadata '/Game/CellDoor_BP.PackageMetaData'
+[2017.12.08-11.47.52:279][369]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/CellDoor_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/CellDoor_BP.uasset" SILENT=true
+[2017.12.08-11.47.52:364][369]LogSavePackage: Save=65.65ms
+[2017.12.08-11.47.52:364][369]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/CellDoor_BPD6B856924547A8C2FF2884BF59C5CCF0.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/CellDoor_BP.uasset'
+[2017.12.08-11.47.52:390][369]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/CellDoor_BP.uasset
+[2017.12.08-11.48.00:891][671]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/Lock_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset" SILENT=true
+[2017.12.08-11.48.00:977][671]LogSavePackage: Save=70.14ms
+[2017.12.08-11.48.00:977][671]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BP0EC97E414CED47E44DD56D98AA51DDB8.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset'
+[2017.12.08-11.48.01:018][671]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset
+[2017.12.08-11.48.01:908][714]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-11.48.42:890][315]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/PaperCutCellBlock_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/PaperCutCellBlock_BP.uasset" SILENT=true
+[2017.12.08-11.48.42:972][315]LogSavePackage: Save=70.07ms
+[2017.12.08-11.48.42:972][315]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/PaperCutCellBlock_BPB91E008B425A392579BADCA060ADC19A.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/PaperCutCellBlock_BP.uasset'
+[2017.12.08-11.48.43:003][315]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/PaperCutCellBlock_BP.uasset
+[2017.12.08-11.48.45:826][397]LogSavePackage: Save=586.88ms
+[2017.12.08-11.48.45:826][397]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMap6C3CE217439D6C80466B3A86129979EC.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2017.12.08-11.48.45:858][397]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap
+[2017.12.08-11.48.49:919][397]LogSavePackage: Save=3875.08ms
+[2017.12.08-11.48.49:919][397]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMap_BuiltData011ABD044BE4DE2BFFC1EEBFC8CABC40.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2017.12.08-11.48.49:938][397]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset
+[2017.12.08-11.49.10:479][ 73]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ShowerRoomKey_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/ShowerRoomKey_BP.uasset" SILENT=true
+[2017.12.08-11.49.10:541][ 73]LogSavePackage: Save=42.59ms
+[2017.12.08-11.49.10:541][ 73]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/ShowerRoomKey_BP4458DF724EABEAEECCD34D923DDCB0DC.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/ShowerRoomKey_BP.uasset'
+[2017.12.08-11.49.10:565][ 73]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/ShowerRoomKey_BP.uasset
+[2017.12.08-11.49.48:629][287]LogLinker: Can't find file '/Script/JailEscape'
+[2017.12.08-11.49.48:629][287]LogLinker: Can't find file '/Script/JailEscape'
+[2017.12.08-11.49.48:645][287]LogLinker: Can't find file '/Game/Lock_BP'
+[2017.12.08-11.49.48:646][287]LogLinker: Can't find file '/Game/Lock_BP'
+[2017.12.08-11.49.48:670][287]LogBlueprint:Warning: [Lock_BP] 'firstWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:670][287]LogBlueprint:Warning: [Lock_BP] 'firstWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:670][287]LogBlueprint:Warning: [Lock_BP] 'firstWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:672][287]LogBlueprint:Warning: [Lock_BP] 'secondWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:672][287]LogBlueprint:Warning: [Lock_BP] 'secondWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:672][287]LogBlueprint:Warning: [Lock_BP] 'secondWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:672][287]LogBlueprint:Warning: [Lock_BP] 'thirdWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:672][287]LogBlueprint:Warning: [Lock_BP] 'thirdWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:672][287]LogBlueprint:Warning: [Lock_BP] 'thirdWheelIndex' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:673][287]LogBlueprint:Warning: [Lock_BP] 'isLocked' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:673][287]LogBlueprint:Warning: [Lock_BP] 'isLocked' variable not found. Base class was probably changed.
+[2017.12.08-11.49.48:673][287]LogBlueprint:Warning: [Lock_BP] 'isLocked' variable not found. Base class was probably changed.
+[2017.12.08-11.50.03:579][ 47]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-11.50.03:695][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "isLocked" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get isLocked
+[2017.12.08-11.50.03:695][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "isLocked" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get isLocked
+[2017.12.08-11.50.03:696][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "isLocked" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get isLocked
+[2017.12.08-11.50.03:696][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set thirdWheelIndex
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get thirdWheelIndex
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.03:697][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.03:698][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.50.03:698][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.03:698][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.50.03:699][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.03:699][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.03:700][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.03:703][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.50.03:703][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.50.03:703][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.50.03:703][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.50.03:703][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.50.03:704][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.50.03:704][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Is Locked  could not be found
+[2017.12.08-11.50.03:704][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Is Locked  could not be found
+[2017.12.08-11.50.03:704][ 47]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Is Locked  could not be found
+[2017.12.08-11.50.04:353][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "isLocked" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get isLocked
+[2017.12.08-11.50.04:353][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "isLocked" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get isLocked
+[2017.12.08-11.50.04:353][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "isLocked" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get isLocked
+[2017.12.08-11.50.04:353][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set thirdWheelIndex
+[2017.12.08-11.50.04:353][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get thirdWheelIndex
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  Is Locked  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  Is Locked  could not be found
+[2017.12.08-11.50.04:354][ 47]BlueprintEditorCompileResults:Error: Error The property associated with  Is Locked  could not be found
+[2017.12.08-11.50.04:355][ 47]LogBlueprint:Warning: [Compiler Lock_BP] Warning [3622.59] Compile of Lock_BP failed. 15 Fatal Issue(s) 12 Warning(s) [in 775 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-11.50.59:626][  1]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-11.50.59:707][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set thirdWheelIndex
+[2017.12.08-11.50.59:707][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get thirdWheelIndex
+[2017.12.08-11.50.59:708][  1]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.59:708][  1]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.59:709][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.50.59:709][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.50.59:709][  1]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.59:710][  1]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.59:710][  1]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.50.59:710][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.50.59:711][  1]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.50.59:711][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.50.59:712][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.59:713][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.59:713][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.50.59:718][  1]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.50.59:718][  1]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.50.59:718][  1]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.50.59:719][  1]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.50.59:719][  1]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.50.59:719][  1]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.51.00:417][  1]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set thirdWheelIndex
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get thirdWheelIndex
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.51.00:418][  1]BlueprintEditorCompileResults:Error: Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.51.00:419][  1]LogBlueprint:Warning: [Compiler Lock_BP] Warning [3678.66] Compile of Lock_BP failed. 12 Fatal Issue(s) 9 Warning(s) [in 792 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-11.51.03:876][215]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-11.51.03:966][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set thirdWheelIndex
+[2017.12.08-11.51.03:967][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get thirdWheelIndex
+[2017.12.08-11.51.03:967][215]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.03:967][215]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.03:968][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.51.03:968][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.51.03:968][215]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.03:969][215]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.03:969][215]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.03:969][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.51.03:970][215]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.03:970][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.51.03:970][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.03:971][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.03:972][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.03:977][215]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.03:977][215]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.03:978][215]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.03:978][215]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.03:978][215]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.51.03:979][215]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set thirdWheelIndex
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "thirdWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get thirdWheelIndex
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.04:570][215]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.04:571][215]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.04:571][215]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.04:571][215]BlueprintEditorCompileResults:Error: Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.51.04:571][215]BlueprintEditorCompileResults:Error: Error The property associated with  Third Wheel Index  could not be found
+[2017.12.08-11.51.04:572][215]LogBlueprint:Warning: [Compiler Lock_BP] Warning [3682.81] Compile of Lock_BP failed. 12 Fatal Issue(s) 9 Warning(s) [in 694 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-11.51.05:308][256]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/Lock_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset" SILENT=true
+[2017.12.08-11.51.05:728][256]LogSavePackage: Save=387.39ms
+[2017.12.08-11.51.05:728][256]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BPB0F9D39D465A6662FBF1249E6BA40466.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset'
+[2017.12.08-11.51.05:768][256]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset
+[2017.12.08-11.51.24:355][323]LogSlate: Took 0.002921 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.12.08-11.51.51:961][833]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-11.51.52:059][833]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.52:059][833]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.52:059][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.51.52:060][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.51.52:060][833]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.52:060][833]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.52:060][833]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.52:060][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.51.52:061][833]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.52:061][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.51.52:061][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.52:062][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.52:062][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.52:066][833]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.52:067][833]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.52:067][833]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.52:067][833]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.52:928][833]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.52:928][833]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.52:929][833]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.51.52:930][833]LogBlueprint:Warning: [Compiler Lock_BP] Warning [3731.17] Compile of Lock_BP failed. 10 Fatal Issue(s) 7 Warning(s) [in 968 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-11.52.53:519][517]BlueprintLog: New page: Collapse to Function
+[2017.12.08-11.55.00:456][836]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-11.55.00:538][836]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.55.00:538][836]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.55.00:538][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.55.00:539][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.55.00:539][836]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.55.00:539][836]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.55.00:539][836]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.55.00:539][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.55.00:540][836]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.55.00:540][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.55.00:540][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.55.00:541][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.55.00:541][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.55.00:552][836]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.55.00:552][836]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.55.00:553][836]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.55.00:553][836]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.55.00:559][836]LogBlueprint:Error: [Compiler Lock_BP] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.00:559][836]LogBlueprint:Error: [Compiler Lock_BP] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.00:559][836]LogBlueprint:Error: [Compiler Lock_BP] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.00:559][836]LogBlueprint:Error: [Compiler Lock_BP] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.01:067][836]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.55.01:067][836]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.55.01:067][836]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.55.01:067][836]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.55.01:067][836]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.55.01:067][836]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.55.01:067][836]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.01:068][836]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.12.08-11.55.01:069][836]LogBlueprint:Warning: [Compiler Lock_BP] Warning [3919.31] Compile of Lock_BP failed. 14 Fatal Issue(s) 7 Warning(s) [in 612 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-11.56.50:945][882]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-11.56.51:062][882]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.56.51:062][882]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.56.51:062][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.56.51:063][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.56.51:063][882]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.56.51:063][882]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.56.51:064][882]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.56.51:064][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.56.51:064][882]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.56.51:064][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.56.51:065][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.56.51:065][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.56.51:066][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.56.51:073][882]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.56.51:073][882]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.56.51:073][882]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.56.51:074][882]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Error: Error Could not find a function named "SetMeshRotation" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set Mesh Rotation
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.56.51:695][882]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.56.51:696][882]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-11.56.51:696][882]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.56.51:696][882]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-11.56.51:696][882]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.56.51:696][882]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-11.56.51:697][882]LogBlueprint:Warning: [Compiler Lock_BP] Warning [4029.94] Compile of Lock_BP failed. 10 Fatal Issue(s) 7 Warning(s) [in 751 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-11.59.03:632][244]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.174
+[2017.12.08-11.59.03:676][244]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Niklas/Blueprints/Lock_BP] ([1] browsable assets)...
+[2017.12.08-11.59.03:676][244]OBJ SavePackage: Finished generating thumbnails for package [/Game/Niklas/Blueprints/Lock_BP]
+[2017.12.08-11.59.05:567][244]LogSavePackage: Save=1317.21ms
+[2017.12.08-11.59.05:567][244]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BP_Auto2023A72FE4D688A289C1C26BB9DB33CCE.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/Niklas/Blueprints/Lock_BP_Auto2.uasset'
+[2017.12.08-11.59.05:592][244]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/Niklas/Blueprints/Lock_BP_Auto2.uasset
+[2017.12.08-11.59.05:592][244]LogFileHelpers: Auto-saving content packages took 1.953
+[2017.12.08-12.00.39:795][266]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.00.39:879][266]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.00.39:879][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-12.00.39:879][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-12.00.39:880][266]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.00.39:880][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-12.00.39:880][266]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.00.39:880][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-12.00.39:881][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.00.39:882][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.00.39:882][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.00.39:887][266]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.00.39:887][266]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.00.39:887][266]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.00.39:887][266]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.00.40:357][266]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.00.40:358][266]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.00.40:358][266]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.00.40:358][266]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.00.40:358][266]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.00.40:358][266]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.00.40:358][266]LogBlueprint:Warning: [Compiler Lock_BP] Warning [4258.60] Compile of Lock_BP failed. 7 Fatal Issue(s) 7 Warning(s) [in 562 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-12.03.21:963][505]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.03.22:036][505]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.03.22:036][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-12.03.22:037][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-12.03.22:037][505]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.03.22:037][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-12.03.22:037][505]LogBlueprint:Error: [Compiler Lock_BP] Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.03.22:037][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-12.03.22:038][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.22:038][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.22:039][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.22:045][505]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.22:045][505]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.22:045][505]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.22:045][505]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.22:480][505]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.03.22:480][505]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Error: Error Could not find a function named "CheckForBoundry" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Check for Boundry
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.22:481][505]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.22:481][505]LogBlueprint:Warning: [Compiler Lock_BP] Warning [4420.72] Compile of Lock_BP failed. 7 Fatal Issue(s) 7 Warning(s) [in 518 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-12.03.38:918][594]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.03.38:999][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-12.03.38:999][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-12.03.38:999][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-12.03.38:999][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-12.03.38:999][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.39:000][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.39:000][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.39:007][594]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.39:007][594]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.39:008][594]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.39:008][594]LogBlueprint:Error: [Compiler Lock_BP] Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set secondWheelIndex
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "secondWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get secondWheelIndex
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Set firstWheelIndex
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "firstWheelIndex" in 'Lock_BP_C'.
+Make sure 'Lock_BP_C' has been compiled for  Get firstWheelIndex
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.39:486][594]BlueprintEditorCompileResults:Error: Error The property associated with  First Wheel Index  could not be found
+[2017.12.08-12.03.39:487][594]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.39:487][594]BlueprintEditorCompileResults:Error: Error The property associated with  Second Wheel Index  could not be found
+[2017.12.08-12.03.39:487][594]LogBlueprint:Warning: [Compiler Lock_BP] Warning [4437.73] Compile of Lock_BP failed. 4 Fatal Issue(s) 7 Warning(s) [in 568 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-12.04.14:985][493]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.04.15:066][493]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.04.15:066][493]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.04.15:067][493]LogBlueprint:Warning: [Compiler Lock_BP] Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.04.15:534][493]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.04.15:534][493]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.04.15:534][493]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'Interact' for  InputAction Interact
+[2017.12.08-12.04.15:535][493]LogBlueprint:Warning: [Compiler Lock_BP] Warning [4473.77] Compile of Lock_BP successful, but with 3 Warning(s) [in 548 ms] (/Game/Niklas/Blueprints/Lock_BP.Lock_BP)
+[2017.12.08-12.04.31:007][ 56]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2017.12.08-12.04.31:425][ 61]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.MyProject
+[2017.12.08-12.04.31:428][ 61]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.16\Engine\Binaries\DotNET\IOS
+[2017.12.08-12.04.31:428][ 61]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.16
+[2017.12.08-12.04.31:428][ 61]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.16\Engine\Binaries\DotNET\IOS
+[2017.12.08-12.04.31:428][ 61]LogTemp: BranchPath = LENOVO-PC/C/Program Files/Epic Games/UE_4.16/Engine/Binaries --- GameBranchPath = LENOVO-PC/C/Program Files/Epic Games/UE_4.16/Engine/Binaries
+[2017.12.08-12.04.31:566][ 65]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Admin\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2017.12.08-12.05.46:687][358]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.05.57:186][803]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/Lock_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset" SILENT=true
+[2017.12.08-12.05.57:700][803]LogSavePackage: Save=479.06ms
+[2017.12.08-12.05.57:700][803]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BPCF0AF32F43AADA76456397B4BEAED10C.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset'
+[2017.12.08-12.05.57:736][803]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset
+[2017.12.08-12.06.13:323][394]LogRenderer: Reallocating scene render targets to support 980x420 NumSamples 1 (Frame:1198).
+[2017.12.08-12.09.29:884][955]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.10.02:902][558]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.059
+[2017.12.08-12.10.02:917][558]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Niklas/Blueprints/Lock_BP] ([1] browsable assets)...
+[2017.12.08-12.10.03:030][558]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Niklas/Blueprints/Lock_BP.Lock_BP]
+[2017.12.08-12.10.03:030][558]OBJ SavePackage: Finished generating thumbnails for package [/Game/Niklas/Blueprints/Lock_BP]
+[2017.12.08-12.10.03:614][558]LogSavePackage: Save=562.00ms
+[2017.12.08-12.10.03:614][558]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BP_Auto3D7D82E8C4950017CBF8E8AA0D8FF732C.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/Niklas/Blueprints/Lock_BP_Auto3.uasset'
+[2017.12.08-12.10.03:673][558]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/Niklas/Blueprints/Lock_BP_Auto3.uasset
+[2017.12.08-12.10.03:673][558]LogFileHelpers: Auto-saving content packages took 0.769
+[2017.12.08-12.10.57:855][874]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.12.36:286][935]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.13.21:327][593]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/Lock_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset" SILENT=true
+[2017.12.08-12.13.21:919][593]LogSavePackage: Save=558.20ms
+[2017.12.08-12.13.21:919][593]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BP9264C9804B070ACEFEF3019D329CA711.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset'
+[2017.12.08-12.13.21:954][593]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset
+[2017.12.08-12.15.12:189][110]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/Lock_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset" SILENT=true
+[2017.12.08-12.15.12:656][110]LogSavePackage: Save=444.34ms
+[2017.12.08-12.15.12:656][110]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BP22DEFBB9471DE656BDE0E591A22252CC.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset'
+[2017.12.08-12.15.12:703][110]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.ShowerRoomKey_BP:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.SKEL_ShowerRoomKey_BP_C:UserConstructionScript' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.SKEL_ShowerRoomKey_BP_C' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.ShowerRoomKey_BP_C:UserConstructionScript' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.ShowerRoomKey_BP_C' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.ShowerRoomKey_BP:EventGraph.K2Node_Event_0' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.ShowerRoomKey_BP:EventGraph.K2Node_Event_1' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:811][784]LogMetaData: Removing '/Game/Niklas/Blueprints/ShowerRoomKey_BP.ShowerRoomKey_BP:EventGraph.K2Node_Event_2' ref from Metadata '/Game/ShowerRoomKey_BP.PackageMetaData'
+[2017.12.08-12.15.30:847][784]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/ShowerRoomKey_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/ShowerRoomKey_BP.uasset" SILENT=true
+[2017.12.08-12.15.30:901][784]LogSavePackage: Save=43.17ms
+[2017.12.08-12.15.30:901][784]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/ShowerRoomKey_BP3E02426347ADAAAB9A1FDF841B7DD2AA.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/ShowerRoomKey_BP.uasset'
+[2017.12.08-12.15.30:934][784]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/ShowerRoomKey_BP.uasset
+[2017.12.08-12.15.53:968][429]LogTemp: Repeting last play command: Selected Viewport
+[2017.12.08-12.15.54:766][429]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.15.54:767][429]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.12.08-12.15.54:775][429]PIE: New page: PIE session: FirstPersonExampleMap (Dec 8, 2017, 2:15:54 PM)
+[2017.12.08-12.15.54:776][429]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2017.12.08-12.15.54:933][429]LogPlayLevel: PIE: StaticDuplicateObject took: (0.156756s)
+[2017.12.08-12.15.54:941][429]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.12.08-12.15.54:950][429]LogPlayLevel: PIE: World Init took: (0.016569s)
+[2017.12.08-12.15.54:951][429]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.175537s)
+[2017.12.08-12.15.55:034][429]LogInit: XAudio2 using 'Lautsprecher (Conexant SmartAudio HD)' : 2 channels at 44.1 kHz using 32 bits per sample (channel mask 0x3)
+[2017.12.08-12.15.55:123][429]LogInit: FAudioDevice initialized.
+[2017.12.08-12.15.55:194][429]LogLoad: Game class is 'MyProjectGameMode'
+[2017.12.08-12.15.55:227][429]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2017.12.08-13.15.55
+[2017.12.08-12.15.55:242][429]LogWorld: Bringing up level for play took: 0.029433
+[2017.12.08-12.15.55:712][429]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0070 seconds. Added 11 classes and 0 folders.
+[2017.12.08-12.15.55:733][429]PIE: Info Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 1.176
+[2017.12.08-12.15.55:734][429]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.25:726][911]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.25:983][911]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.30:394][ 40]LogTemp: Repeting last play command: Selected Viewport
+[2017.12.08-12.16.30:459][ 40]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.30:459][ 40]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.12.08-12.16.30:459][ 40]PIE: New page: PIE session: FirstPersonExampleMap (Dec 8, 2017, 2:16:30 PM)
+[2017.12.08-12.16.30:459][ 40]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2017.12.08-12.16.30:539][ 40]LogPlayLevel: PIE: StaticDuplicateObject took: (0.079561s)
+[2017.12.08-12.16.30:541][ 40]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.12.08-12.16.30:542][ 40]LogPlayLevel: PIE: World Init took: (0.002787s)
+[2017.12.08-12.16.30:543][ 40]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.084221s)
+[2017.12.08-12.16.30:624][ 40]LogInit: XAudio2 using 'Lautsprecher (Conexant SmartAudio HD)' : 2 channels at 44.1 kHz using 32 bits per sample (channel mask 0x3)
+[2017.12.08-12.16.30:673][ 40]LogInit: FAudioDevice initialized.
+[2017.12.08-12.16.30:719][ 40]LogLoad: Game class is 'MyProjectGameMode'
+[2017.12.08-12.16.30:724][ 40]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2017.12.08-13.16.30
+[2017.12.08-12.16.30:725][ 40]LogWorld: Bringing up level for play took: 0.003369
+[2017.12.08-12.16.30:727][ 40]PIE: Info Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0.169
+[2017.12.08-12.16.30:727][ 40]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.34:360][203]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.34:629][203]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.39:506][351]LogTemp: Repeting last play command: Selected Viewport
+[2017.12.08-12.16.39:572][351]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.16.39:572][351]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.12.08-12.16.39:573][351]PIE: New page: PIE session: FirstPersonExampleMap (Dec 8, 2017, 2:16:39 PM)
+[2017.12.08-12.16.39:573][351]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2017.12.08-12.16.39:662][351]LogPlayLevel: PIE: StaticDuplicateObject took: (0.089476s)
+[2017.12.08-12.16.39:667][351]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.12.08-12.16.39:667][351]LogPlayLevel: PIE: World Init took: (0.004881s)
+[2017.12.08-12.16.39:668][351]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.095035s)
+[2017.12.08-12.16.39:751][351]LogInit: XAudio2 using 'Lautsprecher (Conexant SmartAudio HD)' : 2 channels at 44.1 kHz using 32 bits per sample (channel mask 0x3)
+[2017.12.08-12.16.39:811][351]LogInit: FAudioDevice initialized.
+[2017.12.08-12.16.39:856][351]LogLoad: Game class is 'MyProjectGameMode'
+[2017.12.08-12.16.39:864][351]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2017.12.08-13.16.39
+[2017.12.08-12.16.39:865][351]LogWorld: Bringing up level for play took: 0.005699
+[2017.12.08-12.16.39:869][351]PIE: Info Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.688
+[2017.12.08-12.16.39:870][351]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.17.18:902][272]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.17.19:214][272]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.17.50:294][229]LogEditorActor: Deleted Actor: Lock_BP_C
+[2017.12.08-12.17.50:357][229]LogEditorActor: Deleted 1 Actors (0.063 secs)
+[2017.12.08-12.19.49:891][983]BlueprintLog: New page: Compile Lock_BP
+[2017.12.08-12.19.51:715][ 18]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niklas/Blueprints/Lock_BP" FILE="../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset" SILENT=true
+[2017.12.08-12.19.52:262][ 18]LogSavePackage: Save=514.06ms
+[2017.12.08-12.19.52:262][ 18]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Lock_BP3296C97542718CAE635E979155F5B5DD.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset'
+[2017.12.08-12.19.52:294][ 18]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/Niklas/Blueprints/Lock_BP.uasset
+[2017.12.08-12.20.04:627][450]LogSavePackage: Save=550.06ms
+[2017.12.08-12.20.04:627][450]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMapA9A56A5140A6FBB688826A8BBA2B50DE.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2017.12.08-12.20.04:661][450]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap
+[2017.12.08-12.20.08:346][450]LogSavePackage: Save=3537.29ms
+[2017.12.08-12.20.08:346][450]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMap_BuiltDataC1E286CB46CC5C663541B1A295B8F38E.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2017.12.08-12.20.08:360][450]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset
+[2017.12.08-12.20.09:314][477]LogTemp: Repeting last play command: Selected Viewport
+[2017.12.08-12.20.09:435][477]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.20.09:435][477]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.12.08-12.20.09:436][477]PIE: New page: PIE session: FirstPersonExampleMap (Dec 8, 2017, 2:20:09 PM)
+[2017.12.08-12.20.09:436][477]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2017.12.08-12.20.09:524][477]LogPlayLevel: PIE: StaticDuplicateObject took: (0.088029s)
+[2017.12.08-12.20.09:525][477]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.12.08-12.20.09:526][477]LogPlayLevel: PIE: World Init took: (0.001897s)
+[2017.12.08-12.20.09:526][477]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.090399s)
+[2017.12.08-12.20.09:629][477]LogInit: XAudio2 using 'Lautsprecher (Conexant SmartAudio HD)' : 2 channels at 44.1 kHz using 32 bits per sample (channel mask 0x3)
+[2017.12.08-12.20.09:681][477]LogInit: FAudioDevice initialized.
+[2017.12.08-12.20.09:733][477]LogLoad: Game class is 'MyProjectGameMode'
+[2017.12.08-12.20.09:740][477]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2017.12.08-13.20.09
+[2017.12.08-12.20.09:742][477]LogWorld: Bringing up level for play took: 0.005218
+[2017.12.08-12.20.09:745][477]PIE: Info Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 1.188
+[2017.12.08-12.20.09:746][477]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.20.18:651][906]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.20.18:900][906]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2017.12.08-12.22.13:743][751]LogEditorActor: Deleted Actor: Lock_BP_C
+[2017.12.08-12.22.13:816][751]LogEditorActor: Deleted 1 Actors (0.073 secs)
+[2017.12.08-12.26.30:215][877]Candidate modules for hot reload:
+[2017.12.08-12.26.30:215][877]  MyProject
+[2017.12.08-12.26.30:215][877]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 8009 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-12.26.30:242][877]Warning: Starting HotReload took  0.1s.
+[2017.12.08-12.29.04:365][719]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 2:29:04 PM
+[2017.12.08-12.29.04:371][719]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-12.29.04:373][719]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-12.29.04:373][719]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-12.29.04:373][719]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 23,5561158 seconds
+[2017.12.08-12.29.04:374][719]CompilerResultsLog: Info Performing 6 actions (4 in parallel)
+[2017.12.08-12.29.04:374][719]CompilerResultsLog: Info MyProjectGameMode.cpp
+[2017.12.08-12.29.04:374][719]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-12.29.04:374][719]CompilerResultsLog: Info MyProjectHUD.cpp
+[2017.12.08-12.29.04:374][719]CompilerResultsLog: Info MyProjectCharacter.cpp
+[2017.12.08-12.29.04:375][719]CompilerResultsLog:Error: Error C:\Users\Admin\Desktop\GitHub\JailEscape\Source\MyProject\MyProjectCharacter.cpp(236) : error C2027: Verwendung des undefinierten Typs "FSceneViewport"
+[2017.12.08-12.29.04:376][719]CompilerResultsLog:Error: Error C:\Program Files\Epic Games\UE_4.16\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h(14) : note: Siehe Deklaration von "FSceneViewport"
+[2017.12.08-12.29.04:377][719]CompilerResultsLog:Error: Error C:\Users\Admin\Desktop\GitHub\JailEscape\Source\MyProject\MyProjectCharacter.cpp(236) : error C2227: Links von "->GetSizeXY" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
+[2017.12.08-12.29.04:378][719]CompilerResultsLog:Error: Error C:\Users\Admin\Desktop\GitHub\JailEscape\Source\MyProject\MyProjectCharacter.cpp(237) : error C2027: Verwendung des undefinierten Typs "FSceneViewport"
+[2017.12.08-12.29.04:379][719]CompilerResultsLog:Error: Error C:\Program Files\Epic Games\UE_4.16\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h(14) : note: Siehe Deklaration von "FSceneViewport"
+[2017.12.08-12.29.04:379][719]CompilerResultsLog:Error: Error C:\Users\Admin\Desktop\GitHub\JailEscape\Source\MyProject\MyProjectCharacter.cpp(237) : error C2227: Links von "->SetMouse" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
+[2017.12.08-12.29.04:379][719]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Admin\Desktop\GitHub\JailEscape\Binaries\Win64\UE4Editor-MyProject-8009.dll
+[2017.12.08-12.29.04:379][719]CompilerResultsLog: Info Total build time: 151,76 seconds (Local executor: 0,00 seconds)
+[2017.12.08-12.29.04:404][719]LogMainFrame: MainFrame: Module compiling took 154.176 seconds
+[2017.12.08-12.29.04:420][719]Warning: HotReload failed, recompile failed
+[2017.12.08-12.30.33:216][676]LogSavePackage: Save=620.59ms
+[2017.12.08-12.30.33:216][676]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMap_Auto4E1E9190F46C9CB80C72C75BD31BCC0A4.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto4.umap'
+[2017.12.08-12.30.33:241][676]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto4.umap
+[2017.12.08-12.30.33:260][676]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.877
+[2017.12.08-12.30.33:260][676]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.877
+[2017.12.08-12.31.38:429][ 89]Candidate modules for hot reload:
+[2017.12.08-12.31.38:429][ 89]  MyProject
+[2017.12.08-12.31.38:429][ 89]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe MyProject -ModuleWithSuffix MyProject 9334 Win64 Development -editorrecompile -canskiplink "C:/Users/Admin/Desktop/GitHub/JailEscape/MyProject.uproject" ]
+[2017.12.08-12.31.38:449][ 89]Warning: Starting HotReload took  0.1s.
+[2017.12.08-12.38.38:075][691]CompilerResultsLog: New page: Compilation - Dec 8, 2017, 2:38:38 PM
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info Parsing headers for MyProjectEditor
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Admin\Desktop\GitHub\JailEscape\MyProject.uproject" "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info Reflection code generated for MyProjectEditor in 77,8653168 seconds
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info Performing 5 actions (4 in parallel)
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info MyProject.generated.cpp
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info MyProjectCharacter.cpp
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info MyProjectGameMode.cpp
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info [4/5] Link UE4Editor-MyProject-9334.dll
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info [5/5] Link UE4Editor-MyProject-9334.lib
+[2017.12.08-12.38.38:077][691]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9334.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9334.exp" werden erstellt.
+[2017.12.08-12.38.38:078][691]CompilerResultsLog: Info    Bibliothek "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9334.suppressed.lib" und Objekt "C:\Users\Admin\Desktop\GitHub\JailEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-9334.suppressed.exp" werden erstellt.
+[2017.12.08-12.38.38:079][691]CompilerResultsLog: Info Total build time: 417,07 seconds (Local executor: 274,62 seconds)
+[2017.12.08-12.38.38:079][691]LogMainFrame: MainFrame: Module compiling took 419.656 seconds
+[2017.12.08-12.38.38:839][691]LogContentBrowser: Native class hierarchy updated for 'MyProject' in 0.0150 seconds. Added 12 classes and 2 folders.
+[2017.12.08-12.38.38:846][691]Display: HotReload successful (5 functions remapped  0 scriptstructs remapped)
+[2017.12.08-12.38.40:087][691]LogContentBrowser: Native class hierarchy populated in 0.0571 seconds. Added 2343 classes and 497 folders.
+[2017.12.08-12.38.40:088][691]Display: HotReload took 421.7s.
+[2017.12.08-12.41.49:788][625]LogSavePackage: Save=588.26ms
+[2017.12.08-12.41.49:788][625]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMap7D896F094D1B2165D4E1E383F0B6E755.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2017.12.08-12.41.49:826][625]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap
+[2017.12.08-12.41.53:295][625]LogSavePackage: Save=3207.27ms
+[2017.12.08-12.41.53:296][625]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Saved/FirstPersonExampleMap_BuiltData15617D0D4BFA1DA0F11BF896F784014D.tmp' to '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2017.12.08-12.41.53:309][625]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset
+[2017.12.08-12.42.01:947][866]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.12.08-12.42.02:182][866]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.12.08-12.42.02:397][866]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.12.08-12.42.02:618][866]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.12.08-12.42.03:310][867]Cmd: QUIT_EDITOR
+[2017.12.08-12.42.04:369][867]LogExit: Preparing to exit.
+[2017.12.08-12.42.05:829][867]LogDirectoryWatcher: A directory notification for 'C:/Users/Admin/Desktop/GitHub/JailEscape/Content/' was aborted.
+[2017.12.08-12.42.06:215][867]LogExit: Editor shut down
+[2017.12.08-12.42.06:340][867]LogExit: Transaction tracking system shut down
+[2017.12.08-12.42.07:311][867]LogObj: Freed 0b from 0 cluster array pools.
+[2017.12.08-12.42.07:312][867]LogExit: Object subsystem successfully closed.
+[2017.12.08-12.42.07:548][867]LogD3D11RHI: Shutdown
+[2017.12.08-12.42.07:548][867]LogD3D11RHI: CleanupD3DDevice
+[2017.12.08-12.42.08:638][867]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.12.08-12.42.09:466][867]LogModuleManager: Shutting down and abandoning module MyProject (552)
+[2017.12.08-12.42.09:466][867]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (551)
+[2017.12.08-12.42.09:466][867]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (549)
+[2017.12.08-12.42.09:466][867]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (547)
+[2017.12.08-12.42.09:468][867]LogModuleManager: Shutting down and abandoning module BlueprintGraph (544)
+[2017.12.08-12.42.09:468][867]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (542)
+[2017.12.08-12.42.09:469][867]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (526)
+[2017.12.08-12.42.09:470][867]LogModuleManager: Shutting down and abandoning module CrashTracker (524)
+[2017.12.08-12.42.09:470][867]LogModuleManager: Shutting down and abandoning module AddContentDialog (522)
+[2017.12.08-12.42.09:475][867]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2017.12.08-12.42.09:579][867]LogModuleManager: Shutting down and abandoning module WidgetCarousel (521)
+[2017.12.08-12.42.09:580][867]LogModuleManager: Shutting down and abandoning module EditorWidgets (518)
+[2017.12.08-12.42.09:580][867]LogModuleManager: Shutting down and abandoning module CollectionManager (516)
+[2017.12.08-12.42.09:581][867]LogDirectoryWatcher: A directory notification for 'C:/Users/Admin/Desktop/GitHub/JailEscape/Content/Collections/' was aborted.
+[2017.12.08-12.42.09:581][867]LogDirectoryWatcher: A directory notification for 'C:/Users/Admin/Desktop/GitHub/JailEscape/Content/Developers/Admin/Collections/' was aborted.
+[2017.12.08-12.42.09:581][867]LogDirectoryWatcher: A directory notification for 'C:/Users/Admin/Desktop/GitHub/JailEscape/Saved/Collections/' was aborted.
+[2017.12.08-12.42.09:582][867]LogModuleManager: Shutting down and abandoning module SceneOutliner (514)
+[2017.12.08-12.42.09:582][867]LogModuleManager: Shutting down and abandoning module StatsViewer (512)
+[2017.12.08-12.42.09:585][867]LogModuleManager: Shutting down and abandoning module FoliageEdit (510)
+[2017.12.08-12.42.09:585][867]LogModuleManager: Shutting down and abandoning module LandscapeEditor (508)
+[2017.12.08-12.42.09:591][867]LogModuleManager: Shutting down and abandoning module MeshPaintMode (506)
+[2017.12.08-12.42.09:597][867]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (504)
+[2017.12.08-12.42.09:597][867]LogModuleManager: Shutting down and abandoning module ActorPickerMode (502)
+[2017.12.08-12.42.09:597][867]LogModuleManager: Shutting down and abandoning module GeometryMode (500)
+[2017.12.08-12.42.09:597][867]LogModuleManager: Shutting down and abandoning module TextureAlignMode (498)
+[2017.12.08-12.42.09:597][867]LogModuleManager: Shutting down and abandoning module BspMode (496)
+[2017.12.08-12.42.09:597][867]LogModuleManager: Shutting down and abandoning module HardwareSurvey (494)
+[2017.12.08-12.42.09:598][867]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (492)
+[2017.12.08-12.42.09:598][867]LogModuleManager: Shutting down and abandoning module AutomationWorker (490)
+[2017.12.08-12.42.09:598][867]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (488)
+[2017.12.08-12.42.09:601][867]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (486)
+[2017.12.08-12.42.09:607][867]LogModuleManager: Shutting down and abandoning module PlacementMode (485)
+[2017.12.08-12.42.09:607][867]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (482)
+[2017.12.08-12.42.09:607][867]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (480)
+[2017.12.08-12.42.09:607][867]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (478)
+[2017.12.08-12.42.09:607][867]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (476)
+[2017.12.08-12.42.09:607][867]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (474)
+[2017.12.08-12.42.09:608][867]LogModuleManager: Shutting down and abandoning module Media (473)
+[2017.12.08-12.42.09:608][867]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (470)
+[2017.12.08-12.42.09:608][867]LogModuleManager: Shutting down and abandoning module CharacterAI (468)
+[2017.12.08-12.42.09:611][867]LogModuleManager: Shutting down and abandoning module AudioCapture (466)
+[2017.12.08-12.42.09:611][867]LogModuleManager: Shutting down and abandoning module SequenceRecorder (465)
+[2017.12.08-12.42.09:614][867]LogModuleManager: Shutting down and abandoning module SmartSnapping (462)
+[2017.12.08-12.42.09:615][867]LogModuleManager: Shutting down and abandoning module SessionServices (460)
+[2017.12.08-12.42.09:615][867]LogModuleManager: Shutting down and abandoning module ViewportSnapping (458)
+[2017.12.08-12.42.09:616][867]LogModuleManager: Shutting down and abandoning module ViewportInteraction (456)
+[2017.12.08-12.42.09:616][867]LogModuleManager: Shutting down and abandoning module ClothPainter (454)
+[2017.12.08-12.42.09:619][867]LogModuleManager: Shutting down and abandoning module LogVisualizer (452)
+[2017.12.08-12.42.09:623][867]LogModuleManager: Shutting down and abandoning module IntroTutorials (450)
+[2017.12.08-12.42.09:627][867]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (449)
+[2017.12.08-12.42.09:629][867]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (446)
+[2017.12.08-12.42.09:629][867]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (444)
+[2017.12.08-12.42.09:631][867]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (442)
+[2017.12.08-12.42.09:631][867]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (440)
+[2017.12.08-12.42.09:631][867]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (439)
+[2017.12.08-12.42.10:247][867]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (436)
+[2017.12.08-12.42.10:247][867]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (434)
+[2017.12.08-12.42.10:247][867]LogModuleManager: Shutting down and abandoning module InputBindingEditor (432)
+[2017.12.08-12.42.10:253][867]LogModuleManager: Shutting down and abandoning module MergeActors (430)
+[2017.12.08-12.42.10:253][867]LogModuleManager: Shutting down and abandoning module SizeMap (428)
+[2017.12.08-12.42.10:254][867]LogModuleManager: Shutting down and abandoning module TreeMap (426)
+[2017.12.08-12.42.10:255][867]LogModuleManager: Shutting down and abandoning module ReferenceViewer (424)
+[2017.12.08-12.42.10:256][867]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (422)
+[2017.12.08-12.42.10:261][867]LogModuleManager: Shutting down and abandoning module LocalizationService (421)
+[2017.12.08-12.42.10:266][867]LogModuleManager: Shutting down and abandoning module HardwareTargeting (418)
+[2017.12.08-12.42.10:266][867]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (416)
+[2017.12.08-12.42.10:267][867]LogModuleManager: Shutting down and abandoning module UndoHistory (414)
+[2017.12.08-12.42.10:274][867]LogModuleManager: Shutting down and abandoning module UserFeedback (412)
+[2017.12.08-12.42.10:274][867]LogModuleManager: Shutting down and abandoning module XmlParser (410)
+[2017.12.08-12.42.10:277][867]LogModuleManager: Shutting down and abandoning module Blutility (408)
+[2017.12.08-12.42.10:277][867]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (406)
+[2017.12.08-12.42.10:278][867]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (405)
+[2017.12.08-12.42.10:286][867]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (402)
+[2017.12.08-12.42.10:286][867]LogModuleManager: Shutting down and abandoning module SettingsEditor (400)
+[2017.12.08-12.42.10:287][867]LogModuleManager: Shutting down and abandoning module ProjectLauncher (398)
+[2017.12.08-12.42.10:294][867]LogModuleManager: Shutting down and abandoning module SessionFrontend (396)
+[2017.12.08-12.42.10:295][867]LogModuleManager: Shutting down and abandoning module ProfilerClient (394)
+[2017.12.08-12.42.10:295][867]LogModuleManager: Shutting down and abandoning module DeviceManager (392)
+[2017.12.08-12.42.10:298][867]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (391)
+[2017.12.08-12.42.10:366][867]LogModuleManager: Shutting down and abandoning module AutomationController (388)
+[2017.12.08-12.42.10:378][867]LogModuleManager: Shutting down and abandoning module AutomationWindow (386)
+[2017.12.08-12.42.10:381][867]LogModuleManager: Shutting down and abandoning module Layers (384)
+[2017.12.08-12.42.10:384][867]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (382)
+[2017.12.08-12.42.10:384][867]LogModuleManager: Shutting down and abandoning module DetailCustomizations (380)
+[2017.12.08-12.42.10:384][867]LogModuleManager: Shutting down and abandoning module PackagesDialog (378)
+[2017.12.08-12.42.10:385][867]LogModuleManager: Shutting down and abandoning module Persona (376)
+[2017.12.08-12.42.10:387][867]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (375)
+[2017.12.08-12.42.10:388][867]LogModuleManager: Shutting down and abandoning module AnimGraph (373)
+[2017.12.08-12.42.10:388][867]LogModuleManager: Shutting down and abandoning module Kismet (370)
+[2017.12.08-12.42.10:440][867]LogModuleManager: Shutting down and abandoning module ClassViewer (368)
+[2017.12.08-12.42.10:456][867]LogModuleManager: Shutting down and abandoning module Toolbox (366)
+[2017.12.08-12.42.10:458][867]LogModuleManager: Shutting down and abandoning module ModuleUI (364)
+[2017.12.08-12.42.10:459][867]LogModuleManager: Shutting down and abandoning module MovieSceneTools (362)
+[2017.12.08-12.42.10:463][867]LogModuleManager: Shutting down and abandoning module OutputLog (360)
+[2017.12.08-12.42.10:464][867]LogModuleManager: Shutting down and abandoning module GammaUI (358)
+[2017.12.08-12.42.10:467][867]LogModuleManager: Shutting down and abandoning module Documentation (356)
+[2017.12.08-12.42.10:468][867]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (354)
+[2017.12.08-12.42.10:468][867]LogModuleManager: Shutting down and abandoning module MovieScene (352)
+[2017.12.08-12.42.10:468][867]LogModuleManager: Shutting down and abandoning module Niagara (350)
+[2017.12.08-12.42.10:468][867]LogModuleManager: Shutting down and abandoning module NiagaraEditor (349)
+[2017.12.08-12.42.10:474][867]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (346)
+[2017.12.08-12.42.10:475][867]LogModuleManager: Shutting down and abandoning module AnalyticsET (344)
+[2017.12.08-12.42.10:475][867]LogModuleManager: Shutting down and abandoning module PortalServices (342)
+[2017.12.08-12.42.10:475][867]LogModuleManager: Shutting down and abandoning module PortalRpc (340)
+[2017.12.08-12.42.10:475][867]LogModuleManager: Shutting down and abandoning module MessagingRpc (338)
+[2017.12.08-12.42.10:475][867]LogModuleManager: Shutting down and abandoning module AIModule (336)
+[2017.12.08-12.42.10:476][867]LogModuleManager: Shutting down and abandoning module GameplayDebugger (335)
+[2017.12.08-12.42.10:476][867]LogModuleManager: Shutting down and abandoning module AITestSuite (333)
+[2017.12.08-12.42.10:477][867]LogModuleManager: Shutting down and abandoning module ProfilerService (330)
+[2017.12.08-12.42.10:714][867]LogModuleManager: Shutting down and abandoning module TaskGraph (328)
+[2017.12.08-12.42.10:715][867]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
+[2017.12.08-12.42.10:715][867]LogModuleManager: Shutting down and abandoning module SteamVR (324)
+[2017.12.08-12.42.10:715][867]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
+[2017.12.08-12.42.10:716][867]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
+[2017.12.08-12.42.10:717][867]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
+[2017.12.08-12.42.10:717][867]LogModuleManager: Shutting down and abandoning module OculusInput (316)
+[2017.12.08-12.42.10:717][867]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
+[2017.12.08-12.42.10:717][867]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
+[2017.12.08-12.42.10:718][867]LogModuleManager: Shutting down and abandoning module CableComponent (310)
+[2017.12.08-12.42.10:718][867]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
+[2017.12.08-12.42.10:718][867]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
+[2017.12.08-12.42.10:718][867]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
+[2017.12.08-12.42.10:721][867]LogModuleManager: Shutting down and abandoning module HTML5Networking (300)
+[2017.12.08-12.42.10:721][867]LogModuleManager: Shutting down and abandoning module AlembicImporter (298)
+[2017.12.08-12.42.10:722][867]LogModuleManager: Shutting down and abandoning module AlembicLibrary (297)
+[2017.12.08-12.42.10:722][867]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
+[2017.12.08-12.42.10:722][867]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
+[2017.12.08-12.42.10:722][867]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (290)
+[2017.12.08-12.42.10:722][867]LogModuleManager: Shutting down and abandoning module SuperSearch (289)
+[2017.12.08-12.42.10:723][867]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (286)
+[2017.12.08-12.42.10:723][867]LogModuleManager: Shutting down and abandoning module PluginBrowser (284)
+[2017.12.08-12.42.10:728][867]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (282)
+[2017.12.08-12.42.10:729][867]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
+[2017.12.08-12.42.10:730][867]LogModuleManager: Shutting down and abandoning module DesktopPlatform (279)
+[2017.12.08-12.42.10:731][867]LogModuleManager: Shutting down and abandoning module UObjectPlugin (276)
+[2017.12.08-12.42.10:731][867]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (274)
+[2017.12.08-12.42.10:732][867]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (272)
+[2017.12.08-12.42.10:735][867]LogModuleManager: Shutting down and abandoning module GitSourceControl (270)
+[2017.12.08-12.42.10:736][867]LogModuleManager: Shutting down and abandoning module SourceControl (269)
+[2017.12.08-12.42.10:738][867]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (266)
+[2017.12.08-12.42.10:738][867]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (264)
+[2017.12.08-12.42.10:738][867]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (262)
+[2017.12.08-12.42.10:738][867]LogModuleManager: Shutting down and abandoning module Paper2DEditor (260)
+[2017.12.08-12.42.10:740][867]LogModuleManager: Shutting down and abandoning module MeshPaint (259)
+[2017.12.08-12.42.10:741][867]LogModuleManager: Shutting down and abandoning module LevelEditor (257)
+[2017.12.08-12.42.10:745][867]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (256)
+[2017.12.08-12.42.10:747][867]LogModuleManager: Shutting down and abandoning module MainFrame (254)
+[2017.12.08-12.42.10:747][867]LogModuleManager: Shutting down and abandoning module HotReload (253)
+[2017.12.08-12.42.10:747][867]LogDirectoryWatcher: A directory notification for 'C:/Users/Admin/Desktop/GitHub/JailEscape/Binaries/Win64' was aborted.
+[2017.12.08-12.42.10:750][867]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.12.08-12.42.10:751][867]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.12.08-12.42.10:751][867]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.12.08-12.42.10:751][867]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.12.08-12.42.10:751][867]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.12.08-12.42.10:751][867]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.12.08-12.42.10:973][867]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.12.08-12.42.11:078][867]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.12.08-12.42.11:079][867]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.12.08-12.42.11:080][867]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.12.08-12.42.11:080][867]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.12.08-12.42.11:084][867]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.12.08-12.42.11:084][867]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.12.08-12.42.11:088][867]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.12.08-12.42.11:088][867]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.12.08-12.42.11:089][867]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.12.08-12.42.11:090][867]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.12.08-12.42.11:091][867]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.12.08-12.42.11:091][867]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.12.08-12.42.11:097][867]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.12.08-12.42.11:097][867]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.12.08-12.42.11:098][867]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.12.08-12.42.11:099][867]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.12.08-12.42.11:102][867]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.12.08-12.42.11:102][867]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.12.08-12.42.11:105][867]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.12.08-12.42.11:105][867]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.12.08-12.42.11:107][867]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.12.08-12.42.11:108][867]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.12.08-12.42.11:111][867]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.12.08-12.42.11:115][867]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.12.08-12.42.11:120][867]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.12.08-12.42.11:120][867]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.12.08-12.42.11:121][867]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.12.08-12.42.11:126][867]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.12.08-12.42.11:126][867]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.12.08-12.42.11:181][867]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.12.08-12.42.11:182][867]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.12.08-12.42.11:182][867]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.12.08-12.42.11:182][867]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.12.08-12.42.11:182][867]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.12.08-12.42.11:182][867]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.12.08-12.42.11:806][867]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.12.08-12.42.11:807][867]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Admin/Desktop/GitHub/JailEscape/Content/' was aborted.
+[2017.12.08-12.42.11:807][867]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.12.08-12.42.11:807][867]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.12.08-12.42.11:987][867]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.12.08-12.42.12:046][867]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.12.08-12.42.12:046][867]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.12.08-12.42.12:046][867]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.12.08-12.42.12:048][867]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.12.08-12.42.12:052][867]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.12.08-12.42.12:053][867]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.12.08-12.42.12:053][867]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.12.08-12.42.12:055][867]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.12.08-12.42.12:164][867]LogDerivedDataCache: Shutdown
+[2017.12.08-12.42.12:164][867]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.12.08-12.42.12:165][867]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.12.08-12.42.12:166][867]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.12.08-12.42.12:169][867]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.12.08-12.42.12:171][867]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.12.08-12.42.12:172][867]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.12.08-12.42.12:173][867]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.12.08-12.42.12:173][867]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.12.08-12.42.12:174][867]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.12.08-12.42.12:174][867]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.12.08-12.42.12:176][867]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.12.08-12.42.12:176][867]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.12.08-12.42.12:176][867]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.12.08-12.42.12:176][867]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.12.08-12.42.12:176][867]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.12.08-12.42.12:177][867]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.12.08-12.42.12:177][867]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.12.08-12.42.12:177][867]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.12.08-12.42.12:177][867]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.12.08-12.42.12:178][867]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.12.08-12.42.12:178][867]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.12.08-12.42.12:178][867]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.12.08-12.42.12:178][867]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.12.08-12.42.12:179][867]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.12.08-12.42.12:180][867]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.12.08-12.42.12:180][867]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.12.08-12.42.12:180][867]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.12.08-12.42.12:180][867]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.12.08-12.42.12:181][867]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.12.08-12.42.12:181][867]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.12.08-12.42.12:182][867]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.12.08-12.42.12:182][867]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.12.08-12.42.12:182][867]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.12.08-12.42.12:182][867]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.12.08-12.42.12:182][867]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.12.08-12.42.12:182][867]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.12.08-12.42.12:183][867]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.12.08-12.42.12:183][867]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.12.08-12.42.12:183][867]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.12.08-12.42.12:183][867]LogOnline:Display: Unloading online subsystem: NULL
+[2017.12.08-12.42.12:188][867]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.12.08-12.42.12:190][867]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.12.08-12.42.12:191][867]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.12.08-12.42.12:191][867]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BF133EB3B-4EF7-632F-20B1-10B5BCC41675%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=14ca6fc8481cf916eb430bae83257279%7Cac3a445bf22c49b8ad21a7f625dff154%7C76c3453e-9662-4088-aa13-57139f7a0367&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.12.08-12.42.12:225][867]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.12.08-12.42.12:242][867]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.12.08-12.42.12:245][867]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.12.08-12.42.12:251][867]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.12.08-12.42.12:254][867]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.12.08-12.42.12:255][867]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.12.08-12.42.12:255][867]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.12.08-12.42.12:256][867]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.12.08-12.42.12:256][867]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.12.08-12.42.12:305][867]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.12.08-12.42.12:315][867]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.12.08-12.42.12:315][867]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.12.08-12.42.12:315][867]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.12.08-12.42.12:315][867]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.12.08-12.42.12:315][867]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.12.08-12.42.12:315][867]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.12.08-12.42.12:316][867]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.12.08-12.42.12:316][867]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.12.08-12.42.12:316][867]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.12.08-12.42.12:364][867]LogExit: Exiting.
+[2017.12.08-12.42.12:588][867]Log file closed, 12/08/17 13:42:12

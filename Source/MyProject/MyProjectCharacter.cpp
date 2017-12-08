@@ -10,6 +10,7 @@
 #include "Kismet/HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
+#include "SceneViewport.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -51,6 +52,15 @@ void AMyProjectCharacter::BeginPlay()
 	// Call the base class  
 	Super::BeginPlay();
 
+	CenterMousePosition( GetWorld() );
+
+}
+
+void AMyProjectCharacter::Tick( float DeltaTime )
+{
+	Super::Tick( DeltaTime );
+
+	CenterMousePosition( GetWorld() );
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -200,4 +210,41 @@ bool AMyProjectCharacter::EnableTouchscreenMovement(class UInputComponent* Playe
 		//PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AMyProjectCharacter::TouchUpdate);
 	}
 	return bResult;
+}
+
+void AMyProjectCharacter::CenterMousePosition( const UObject* WorldContextObject )
+{
+	UWorld* World = GEngine->GetWorldFromContextObject( WorldContextObject );
+	APlayerController* PC = World->GetFirstPlayerController();
+
+	if( !IsValid( PC ) )
+	{
+		GEngine->AddOnScreenDebugMessage( -1, 15.0f, FColor::Red, TEXT( "Couldn't assign player controller!" ) );
+		return;
+	}
+
+	auto LP = Cast<ULocalPlayer>( PC->Player );
+
+	if( !IsValid( LP ) )
+	{
+		GEngine->AddOnScreenDebugMessage( -1, 15.0f, FColor::Red, TEXT( "Couldn't cast to local player!" ) );
+		return;
+	}
+
+	auto VP = LP->ViewportClient;
+
+	if( !IsValid( VP ) )
+	{
+		GEngine->AddOnScreenDebugMessage( -1, 15.0f, FColor::Red, TEXT( "Couldn't get viewport client!" ) );
+		return;
+	}
+
+	FSceneViewport* GVP = VP->GetGameViewport();
+
+	if( GVP != nullptr )
+	{
+		const FIntPoint VPSize = GVP->GetSizeXY();
+		GVP->SetMouse( VPSize.X / 2, VPSize.Y / 2 );
+	}
+
 }

@@ -15,6 +15,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	HEADMOUNTEDDISPLAY_API class UClass* Z_Construct_UClass_UMotionControllerComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -24,12 +29,17 @@ void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 
+	MYPROJECT_API class UFunction* Z_Construct_UFunction_ACellDoor_IsLocked();
+	MYPROJECT_API class UFunction* Z_Construct_UFunction_ACellDoor_SetLocked();
+	MYPROJECT_API class UClass* Z_Construct_UClass_ACellDoor_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_ACellDoor();
 	MYPROJECT_API class UClass* Z_Construct_UClass_ACEnemyAI_NoRegister();
 	MYPROJECT_API class UClass* Z_Construct_UClass_ACEnemyAI();
+	MYPROJECT_API class UClass* Z_Construct_UClass_ALock_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_ALock();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectCharacter_NoRegister();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectCharacter();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectGameMode_NoRegister();
@@ -39,7 +49,144 @@ void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 	MYPROJECT_API class UFunction* Z_Construct_UFunction_AMyProjectProjectile_OnHit();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectProjectile_NoRegister();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectProjectile();
+	MYPROJECT_API class UClass* Z_Construct_UClass_APaperCutCell_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_APaperCutCell();
+	MYPROJECT_API class UClass* Z_Construct_UClass_APaperCutCellBlock_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_APaperCutCellBlock();
+	MYPROJECT_API class UClass* Z_Construct_UClass_APaperCutCellRow_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_APaperCutCellRow();
+	MYPROJECT_API class UClass* Z_Construct_UClass_AShowerRoomDoor_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_AShowerRoomDoor();
+	MYPROJECT_API class UFunction* Z_Construct_UFunction_AShowerRoomKey_IsPickedUp();
+	MYPROJECT_API class UFunction* Z_Construct_UFunction_AShowerRoomKey_SetPickedUp();
+	MYPROJECT_API class UClass* Z_Construct_UClass_AShowerRoomKey_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_AShowerRoomKey();
 	MYPROJECT_API class UPackage* Z_Construct_UPackage__Script_MyProject();
+	void ACellDoor::StaticRegisterNativesACellDoor()
+	{
+		UClass* Class = ACellDoor::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "IsLocked", (Native)&ACellDoor::execIsLocked },
+			{ "SetLocked", (Native)&ACellDoor::execSetLocked },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 2);
+	}
+	UFunction* Z_Construct_UFunction_ACellDoor_IsLocked()
+	{
+		struct CellDoor_eventIsLocked_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ACellDoor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsLocked"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54020401, 65535, sizeof(CellDoor_eventIsLocked_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, CellDoor_eventIsLocked_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, CellDoor_eventIsLocked_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, CellDoor_eventIsLocked_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CellDoor"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ACellDoor_SetLocked()
+	{
+		struct CellDoor_eventSetLocked_Parms
+		{
+			bool _state;
+		};
+		UObject* Outer=Z_Construct_UClass_ACellDoor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetLocked"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(CellDoor_eventSetLocked_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(_state, CellDoor_eventSetLocked_Parms, bool);
+			UProperty* NewProp__state = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_state"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(_state, CellDoor_eventSetLocked_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(_state, CellDoor_eventSetLocked_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CellDoor"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_ACellDoor_NoRegister()
+	{
+		return ACellDoor::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ACellDoor()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = ACellDoor::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_ACellDoor_IsLocked());
+				OuterClass->LinkChild(Z_Construct_UFunction_ACellDoor_SetLocked());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsLocked, ACellDoor, bool);
+				UProperty* NewProp_bIsLocked = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsLocked"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsLocked, ACellDoor), 0x0040000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsLocked, ACellDoor), sizeof(bool), true);
+				UProperty* NewProp_doorSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("doorSound"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(doorSound, ACellDoor), 0x00400000000a0009, Z_Construct_UClass_UAudioComponent_NoRegister());
+				UProperty* NewProp_interactionZone = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("interactionZone"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(interactionZone, ACellDoor), 0x00400000000a0009, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_door = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("door"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(door, ACellDoor), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_doorFrame = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("doorFrame"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(doorFrame, ACellDoor), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_sceneComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sceneComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(sceneComponent, ACellDoor), 0x00400000000a0009, Z_Construct_UClass_USceneComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ACellDoor_IsLocked(), "IsLocked"); // 4107600140
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ACellDoor_SetLocked(), "SetLocked"); // 3946593571
+				static TCppClassTypeInfo<TCppClassTypeTraits<ACellDoor> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("CellDoor.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+				MetaData->SetValue(NewProp_bIsLocked, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bIsLocked, TEXT("Category"), TEXT("CellDoor"));
+				MetaData->SetValue(NewProp_bIsLocked, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+				MetaData->SetValue(NewProp_doorSound, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_doorSound, TEXT("Category"), TEXT("CellDoor"));
+				MetaData->SetValue(NewProp_doorSound, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_doorSound, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("Category"), TEXT("CellDoor"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+				MetaData->SetValue(NewProp_door, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_door, TEXT("Category"), TEXT("CellDoor"));
+				MetaData->SetValue(NewProp_door, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_door, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+				MetaData->SetValue(NewProp_doorFrame, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_doorFrame, TEXT("Category"), TEXT("CellDoor"));
+				MetaData->SetValue(NewProp_doorFrame, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_doorFrame, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("Category"), TEXT("CellDoor"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("ModuleRelativePath"), TEXT("CellDoor.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(ACellDoor, 432023922);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ACellDoor(Z_Construct_UClass_ACellDoor, &ACellDoor::StaticClass, TEXT("/Script/MyProject"), TEXT("ACellDoor"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ACellDoor);
 	void ACEnemyAI::StaticRegisterNativesACEnemyAI()
 	{
 	}
@@ -78,6 +225,85 @@ void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 	IMPLEMENT_CLASS(ACEnemyAI, 1959828207);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ACEnemyAI(Z_Construct_UClass_ACEnemyAI, &ACEnemyAI::StaticClass, TEXT("/Script/MyProject"), TEXT("ACEnemyAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ACEnemyAI);
+	void ALock::StaticRegisterNativesALock()
+	{
+	}
+	UClass* Z_Construct_UClass_ALock_NoRegister()
+	{
+		return ALock::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ALock()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = ALock::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_spinSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("spinSound"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(spinSound, ALock), 0x00400000000a0009, Z_Construct_UClass_UAudioComponent_NoRegister());
+				UProperty* NewProp_unlockSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("unlockSound"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(unlockSound, ALock), 0x00400000000a0009, Z_Construct_UClass_UAudioComponent_NoRegister());
+				UProperty* NewProp_interactionZone = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("interactionZone"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(interactionZone, ALock), 0x00400000000a0009, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_thirdNumWheel = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("thirdNumWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(thirdNumWheel, ALock), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_secondNumWheel = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("secondNumWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(secondNumWheel, ALock), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_firstNumWheel = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("firstNumWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(firstNumWheel, ALock), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_lockMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lockMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(lockMesh, ALock), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_sceneComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sceneComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(sceneComponent, ALock), 0x00400000000a0009, Z_Construct_UClass_USceneComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<ALock> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Lock.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_spinSound, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_spinSound, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_spinSound, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_spinSound, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_unlockSound, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_unlockSound, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_unlockSound, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_unlockSound, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_thirdNumWheel, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_thirdNumWheel, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_thirdNumWheel, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_thirdNumWheel, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_secondNumWheel, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_secondNumWheel, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_secondNumWheel, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_secondNumWheel, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_firstNumWheel, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_firstNumWheel, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_firstNumWheel, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_firstNumWheel, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_lockMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_lockMesh, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_lockMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_lockMesh, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("Category"), TEXT("Lock"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("ModuleRelativePath"), TEXT("Lock.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(ALock, 2906006228);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ALock(Z_Construct_UClass_ALock, &ALock::StaticClass, TEXT("/Script/MyProject"), TEXT("ALock"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ALock);
 	void AMyProjectCharacter::StaticRegisterNativesAMyProjectCharacter()
 	{
 	}
@@ -320,6 +546,306 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	IMPLEMENT_CLASS(AMyProjectProjectile, 4080409645);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMyProjectProjectile(Z_Construct_UClass_AMyProjectProjectile, &AMyProjectProjectile::StaticClass, TEXT("/Script/MyProject"), TEXT("AMyProjectProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMyProjectProjectile);
+	void APaperCutCell::StaticRegisterNativesAPaperCutCell()
+	{
+	}
+	UClass* Z_Construct_UClass_APaperCutCell_NoRegister()
+	{
+		return APaperCutCell::StaticClass();
+	}
+	UClass* Z_Construct_UClass_APaperCutCell()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = APaperCutCell::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				static TCppClassTypeInfo<TCppClassTypeTraits<APaperCutCell> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PaperCutCell.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PaperCutCell.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(APaperCutCell, 1845663124);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APaperCutCell(Z_Construct_UClass_APaperCutCell, &APaperCutCell::StaticClass, TEXT("/Script/MyProject"), TEXT("APaperCutCell"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APaperCutCell);
+	void APaperCutCellBlock::StaticRegisterNativesAPaperCutCellBlock()
+	{
+	}
+	UClass* Z_Construct_UClass_APaperCutCellBlock_NoRegister()
+	{
+		return APaperCutCellBlock::StaticClass();
+	}
+	UClass* Z_Construct_UClass_APaperCutCellBlock()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = APaperCutCellBlock::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_pickupSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pickupSound"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(pickupSound, APaperCutCellBlock), 0x00400000000a0009, Z_Construct_UClass_UAudioComponent_NoRegister());
+				UProperty* NewProp_interactionZone = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("interactionZone"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(interactionZone, APaperCutCellBlock), 0x00400000000a0009, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_cellBlockB = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cellBlockB"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(cellBlockB, APaperCutCellBlock), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_cellBlockA = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cellBlockA"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(cellBlockA, APaperCutCellBlock), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_meshInstances = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("meshInstances"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(meshInstances, APaperCutCellBlock), 0x00400000000a0009, Z_Construct_UClass_USceneComponent_NoRegister());
+				UProperty* NewProp_sceneComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sceneComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(sceneComponent, APaperCutCellBlock), 0x00400000000a0009, Z_Construct_UClass_USceneComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<APaperCutCellBlock> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PaperCutCellBlock.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PaperCutCellBlock.h"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("Category"), TEXT("PaperCutCellBlock"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("ModuleRelativePath"), TEXT("PaperCutCellBlock.h"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("Category"), TEXT("PaperCutCellBlock"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("ModuleRelativePath"), TEXT("PaperCutCellBlock.h"));
+				MetaData->SetValue(NewProp_cellBlockB, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_cellBlockB, TEXT("Category"), TEXT("PaperCutCellBlock"));
+				MetaData->SetValue(NewProp_cellBlockB, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_cellBlockB, TEXT("ModuleRelativePath"), TEXT("PaperCutCellBlock.h"));
+				MetaData->SetValue(NewProp_cellBlockA, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_cellBlockA, TEXT("Category"), TEXT("PaperCutCellBlock"));
+				MetaData->SetValue(NewProp_cellBlockA, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_cellBlockA, TEXT("ModuleRelativePath"), TEXT("PaperCutCellBlock.h"));
+				MetaData->SetValue(NewProp_meshInstances, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_meshInstances, TEXT("Category"), TEXT("PaperCutCellBlock"));
+				MetaData->SetValue(NewProp_meshInstances, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_meshInstances, TEXT("ModuleRelativePath"), TEXT("PaperCutCellBlock.h"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("Category"), TEXT("PaperCutCellBlock"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("ModuleRelativePath"), TEXT("PaperCutCellBlock.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(APaperCutCellBlock, 1511386267);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APaperCutCellBlock(Z_Construct_UClass_APaperCutCellBlock, &APaperCutCellBlock::StaticClass, TEXT("/Script/MyProject"), TEXT("APaperCutCellBlock"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APaperCutCellBlock);
+	void APaperCutCellRow::StaticRegisterNativesAPaperCutCellRow()
+	{
+	}
+	UClass* Z_Construct_UClass_APaperCutCellRow_NoRegister()
+	{
+		return APaperCutCellRow::StaticClass();
+	}
+	UClass* Z_Construct_UClass_APaperCutCellRow()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = APaperCutCellRow::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				static TCppClassTypeInfo<TCppClassTypeTraits<APaperCutCellRow> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PaperCutCellRow.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PaperCutCellRow.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(APaperCutCellRow, 3863280561);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APaperCutCellRow(Z_Construct_UClass_APaperCutCellRow, &APaperCutCellRow::StaticClass, TEXT("/Script/MyProject"), TEXT("APaperCutCellRow"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APaperCutCellRow);
+	void AShowerRoomDoor::StaticRegisterNativesAShowerRoomDoor()
+	{
+	}
+	UClass* Z_Construct_UClass_AShowerRoomDoor_NoRegister()
+	{
+		return AShowerRoomDoor::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AShowerRoomDoor()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = AShowerRoomDoor::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				static TCppClassTypeInfo<TCppClassTypeTraits<AShowerRoomDoor> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ShowerRoomDoor.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("ShowerRoomDoor.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AShowerRoomDoor, 1687822351);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AShowerRoomDoor(Z_Construct_UClass_AShowerRoomDoor, &AShowerRoomDoor::StaticClass, TEXT("/Script/MyProject"), TEXT("AShowerRoomDoor"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AShowerRoomDoor);
+	void AShowerRoomKey::StaticRegisterNativesAShowerRoomKey()
+	{
+		UClass* Class = AShowerRoomKey::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "IsPickedUp", (Native)&AShowerRoomKey::execIsPickedUp },
+			{ "SetPickedUp", (Native)&AShowerRoomKey::execSetPickedUp },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 2);
+	}
+	UFunction* Z_Construct_UFunction_AShowerRoomKey_IsPickedUp()
+	{
+		struct ShowerRoomKey_eventIsPickedUp_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AShowerRoomKey();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsPickedUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54020401, 65535, sizeof(ShowerRoomKey_eventIsPickedUp_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, ShowerRoomKey_eventIsPickedUp_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, ShowerRoomKey_eventIsPickedUp_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, ShowerRoomKey_eventIsPickedUp_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("ShowerRoomKey"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AShowerRoomKey_SetPickedUp()
+	{
+		struct ShowerRoomKey_eventSetPickedUp_Parms
+		{
+			bool _state;
+		};
+		UObject* Outer=Z_Construct_UClass_AShowerRoomKey();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetPickedUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(ShowerRoomKey_eventSetPickedUp_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(_state, ShowerRoomKey_eventSetPickedUp_Parms, bool);
+			UProperty* NewProp__state = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_state"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(_state, ShowerRoomKey_eventSetPickedUp_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(_state, ShowerRoomKey_eventSetPickedUp_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("ShowerRoomKey"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AShowerRoomKey_NoRegister()
+	{
+		return AShowerRoomKey::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AShowerRoomKey()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = AShowerRoomKey::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AShowerRoomKey_IsPickedUp());
+				OuterClass->LinkChild(Z_Construct_UFunction_AShowerRoomKey_SetPickedUp());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPickedUp, AShowerRoomKey, bool);
+				UProperty* NewProp_bIsPickedUp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPickedUp"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPickedUp, AShowerRoomKey), 0x0040000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPickedUp, AShowerRoomKey), sizeof(bool), true);
+				UProperty* NewProp_pickupSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pickupSound"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(pickupSound, AShowerRoomKey), 0x00400000000a0009, Z_Construct_UClass_UAudioComponent_NoRegister());
+				UProperty* NewProp_interactionZone = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("interactionZone"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(interactionZone, AShowerRoomKey), 0x00400000000a0009, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_showerRoomKey = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("showerRoomKey"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(showerRoomKey, AShowerRoomKey), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_sceneComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sceneComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(sceneComponent, AShowerRoomKey), 0x00400000000a0009, Z_Construct_UClass_USceneComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AShowerRoomKey_IsPickedUp(), "IsPickedUp"); // 3106694031
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AShowerRoomKey_SetPickedUp(), "SetPickedUp"); // 133831620
+				static TCppClassTypeInfo<TCppClassTypeTraits<AShowerRoomKey> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ShowerRoomKey.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+				MetaData->SetValue(NewProp_bIsPickedUp, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bIsPickedUp, TEXT("Category"), TEXT("ShowerRoomKey"));
+				MetaData->SetValue(NewProp_bIsPickedUp, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("Category"), TEXT("ShowerRoomKey"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_pickupSound, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("Category"), TEXT("ShowerRoomKey"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_interactionZone, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+				MetaData->SetValue(NewProp_showerRoomKey, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_showerRoomKey, TEXT("Category"), TEXT("ShowerRoomKey"));
+				MetaData->SetValue(NewProp_showerRoomKey, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_showerRoomKey, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("Category"), TEXT("ShowerRoomKey"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_sceneComponent, TEXT("ModuleRelativePath"), TEXT("ShowerRoomKey.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AShowerRoomKey, 1019049311);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AShowerRoomKey(Z_Construct_UClass_AShowerRoomKey, &AShowerRoomKey::StaticClass, TEXT("/Script/MyProject"), TEXT("AShowerRoomKey"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AShowerRoomKey);
 	UPackage* Z_Construct_UPackage__Script_MyProject()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -328,8 +854,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/MyProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xD295DA92;
-			Guid.B = 0xBABBA153;
+			Guid.A = 0x2899CD50;
+			Guid.B = 0x535DBC73;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

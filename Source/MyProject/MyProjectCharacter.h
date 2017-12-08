@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "GameFramework/Character.h"
 #include "MyProjectCharacter.generated.h"
 
@@ -30,6 +30,8 @@ public:
 
 protected:
 	virtual void BeginPlay();
+
+	virtual void Tick( float DeltaTime ) override;
 
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
@@ -100,5 +102,7 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+private:
+	void CenterMousePosition( const UObject* WorldContextObject );
 };
 
