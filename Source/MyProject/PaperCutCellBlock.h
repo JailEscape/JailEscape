@@ -23,6 +23,15 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION( BlueprintCallable, Category = "PaperCutCellBlock" )
+		FORCEINLINE bool IsPickedUp() const { return bIsPickedUp; }
+
+	UFUNCTION( BlueprintCallable, Category = "PaperCutCellBlock" )
+		void SetPickedUp( bool _state );
+
+	UFUNCTION( BlueprintCallable, Category = "PaperCutCellBlock" )
+		int GetPaperIndex() const { return nPaperIndex;  }
+
 private:
 
 	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellBlock", meta = ( AllowPrivateAccess = "true" ) )
@@ -30,6 +39,9 @@ private:
 
 	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellBlock", meta = ( AllowPrivateAccess = "true" ) )
 		class USceneComponent* meshInstances;
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellBlock", meta = ( AllowPrivateAccess = "true" ) )
+		class USphereComponent* interactionObject;
 
 	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellBlock", meta = ( AllowPrivateAccess = "true" ) )
 		class UStaticMeshComponent* cellBlockA;
@@ -42,5 +54,11 @@ private:
 
 	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellBlock", meta = ( AllowPrivateAccess = "true" ) )
 		class UAudioComponent* pickupSound;
+
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "PaperCutCellBlock", meta = ( AllowPrivateAccess = "true" ) )
+		bool bIsPickedUp;
+
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "PaperCutCellBlock", meta = ( AllowPrivateAccess = "true" ) )
+		int nPaperIndex;
 	
 };

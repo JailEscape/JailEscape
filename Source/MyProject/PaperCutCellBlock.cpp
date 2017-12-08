@@ -15,6 +15,9 @@ APaperCutCellBlock::APaperCutCellBlock()
 	meshInstances = CreateAbstractDefaultSubobject<USceneComponent>( TEXT( "MeshInstances" ) );
 	meshInstances->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
 
+	interactionObject = CreateAbstractDefaultSubobject<USphereComponent>( TEXT( "InteractionObject" ) );
+	interactionObject->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
+
 	cellBlockA = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "CellBlockAMesh" ) );
 	cellBlockA->AttachToComponent( meshInstances, FAttachmentTransformRules::KeepRelativeTransform );
 
@@ -26,6 +29,10 @@ APaperCutCellBlock::APaperCutCellBlock()
 
 	pickupSound = CreateDefaultSubobject<UAudioComponent>( TEXT( "PickupSound" ) );
 	pickupSound->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
+
+	bIsPickedUp = false;
+
+	nPaperIndex = 0;
 
 }
 
@@ -41,5 +48,10 @@ void APaperCutCellBlock::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void APaperCutCellBlock::SetPickedUp( bool _state )
+{
+	bIsPickedUp = _state;
 }
 

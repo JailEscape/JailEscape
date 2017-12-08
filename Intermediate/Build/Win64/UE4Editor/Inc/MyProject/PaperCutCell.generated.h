@@ -13,8 +13,62 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYPROJECT_PaperCutCell_generated_h
 
-#define JailEscape_Source_MyProject_PaperCutCell_h_12_RPC_WRAPPERS
-#define JailEscape_Source_MyProject_PaperCutCell_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define JailEscape_Source_MyProject_PaperCutCell_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetPaperIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->GetPaperIndex(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetPickedUp) \
+	{ \
+		P_GET_UBOOL(Z_Param__state); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetPickedUp(Z_Param__state); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsPickedUp) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->IsPickedUp(); \
+		P_NATIVE_END; \
+	}
+
+
+#define JailEscape_Source_MyProject_PaperCutCell_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetPaperIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->GetPaperIndex(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetPickedUp) \
+	{ \
+		P_GET_UBOOL(Z_Param__state); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetPickedUp(Z_Param__state); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsPickedUp) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->IsPickedUp(); \
+		P_NATIVE_END; \
+	}
+
+
 #define JailEscape_Source_MyProject_PaperCutCell_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPaperCutCell(); \
@@ -59,7 +113,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APaperCutCell); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APaperCutCell)
 
 
-#define JailEscape_Source_MyProject_PaperCutCell_h_12_PRIVATE_PROPERTY_OFFSET
+#define JailEscape_Source_MyProject_PaperCutCell_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__sceneComponent() { return STRUCT_OFFSET(APaperCutCell, sceneComponent); } \
+	FORCEINLINE static uint32 __PPO__meshInstances() { return STRUCT_OFFSET(APaperCutCell, meshInstances); } \
+	FORCEINLINE static uint32 __PPO__interactionObject() { return STRUCT_OFFSET(APaperCutCell, interactionObject); } \
+	FORCEINLINE static uint32 __PPO__cell1() { return STRUCT_OFFSET(APaperCutCell, cell1); } \
+	FORCEINLINE static uint32 __PPO__cell2() { return STRUCT_OFFSET(APaperCutCell, cell2); } \
+	FORCEINLINE static uint32 __PPO__cell3() { return STRUCT_OFFSET(APaperCutCell, cell3); } \
+	FORCEINLINE static uint32 __PPO__cell4() { return STRUCT_OFFSET(APaperCutCell, cell4); } \
+	FORCEINLINE static uint32 __PPO__cell5() { return STRUCT_OFFSET(APaperCutCell, cell5); } \
+	FORCEINLINE static uint32 __PPO__cell6() { return STRUCT_OFFSET(APaperCutCell, cell6); } \
+	FORCEINLINE static uint32 __PPO__cell7() { return STRUCT_OFFSET(APaperCutCell, cell7); } \
+	FORCEINLINE static uint32 __PPO__cell8() { return STRUCT_OFFSET(APaperCutCell, cell8); } \
+	FORCEINLINE static uint32 __PPO__cell9() { return STRUCT_OFFSET(APaperCutCell, cell9); } \
+	FORCEINLINE static uint32 __PPO__cell10() { return STRUCT_OFFSET(APaperCutCell, cell10); } \
+	FORCEINLINE static uint32 __PPO__interactionZone() { return STRUCT_OFFSET(APaperCutCell, interactionZone); } \
+	FORCEINLINE static uint32 __PPO__pickupSound() { return STRUCT_OFFSET(APaperCutCell, pickupSound); } \
+	FORCEINLINE static uint32 __PPO__bIsPickedUp() { return STRUCT_OFFSET(APaperCutCell, bIsPickedUp); } \
+	FORCEINLINE static uint32 __PPO__nPaperIndex() { return STRUCT_OFFSET(APaperCutCell, nPaperIndex); }
+
+
 #define JailEscape_Source_MyProject_PaperCutCell_h_9_PROLOG
 #define JailEscape_Source_MyProject_PaperCutCell_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

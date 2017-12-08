@@ -13,8 +13,62 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYPROJECT_PaperCutCellBlock_generated_h
 
-#define JailEscape_Source_MyProject_PaperCutCellBlock_h_12_RPC_WRAPPERS
-#define JailEscape_Source_MyProject_PaperCutCellBlock_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define JailEscape_Source_MyProject_PaperCutCellBlock_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetPaperIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->GetPaperIndex(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetPickedUp) \
+	{ \
+		P_GET_UBOOL(Z_Param__state); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetPickedUp(Z_Param__state); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsPickedUp) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->IsPickedUp(); \
+		P_NATIVE_END; \
+	}
+
+
+#define JailEscape_Source_MyProject_PaperCutCellBlock_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetPaperIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->GetPaperIndex(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetPickedUp) \
+	{ \
+		P_GET_UBOOL(Z_Param__state); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetPickedUp(Z_Param__state); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsPickedUp) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->IsPickedUp(); \
+		P_NATIVE_END; \
+	}
+
+
 #define JailEscape_Source_MyProject_PaperCutCellBlock_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPaperCutCellBlock(); \
@@ -62,10 +116,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APaperCutCellBlock); \
 #define JailEscape_Source_MyProject_PaperCutCellBlock_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__sceneComponent() { return STRUCT_OFFSET(APaperCutCellBlock, sceneComponent); } \
 	FORCEINLINE static uint32 __PPO__meshInstances() { return STRUCT_OFFSET(APaperCutCellBlock, meshInstances); } \
+	FORCEINLINE static uint32 __PPO__interactionObject() { return STRUCT_OFFSET(APaperCutCellBlock, interactionObject); } \
 	FORCEINLINE static uint32 __PPO__cellBlockA() { return STRUCT_OFFSET(APaperCutCellBlock, cellBlockA); } \
 	FORCEINLINE static uint32 __PPO__cellBlockB() { return STRUCT_OFFSET(APaperCutCellBlock, cellBlockB); } \
 	FORCEINLINE static uint32 __PPO__interactionZone() { return STRUCT_OFFSET(APaperCutCellBlock, interactionZone); } \
-	FORCEINLINE static uint32 __PPO__pickupSound() { return STRUCT_OFFSET(APaperCutCellBlock, pickupSound); }
+	FORCEINLINE static uint32 __PPO__pickupSound() { return STRUCT_OFFSET(APaperCutCellBlock, pickupSound); } \
+	FORCEINLINE static uint32 __PPO__bIsPickedUp() { return STRUCT_OFFSET(APaperCutCellBlock, bIsPickedUp); } \
+	FORCEINLINE static uint32 __PPO__nPaperIndex() { return STRUCT_OFFSET(APaperCutCellBlock, nPaperIndex); }
 
 
 #define JailEscape_Source_MyProject_PaperCutCellBlock_h_9_PROLOG

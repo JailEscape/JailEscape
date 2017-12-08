@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "GameFramework/Actor.h"
 #include "PaperCutCellRow.generated.h"
 
@@ -23,6 +23,42 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	
+	UFUNCTION( BlueprintCallable, Category = "PaperCutCellRow" )
+		FORCEINLINE bool IsPickedUp() const { return bIsPickedUp; }
+
+	UFUNCTION( BlueprintCallable, Category = "PaperCutCellRow" )
+		void SetPickedUp( bool _state );
+
+	UFUNCTION( BlueprintCallable, Category = "PaperCutCellRow" )
+		int GetPaperIndex() const { return nPaperIndex; }
+
+private:
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		class USceneComponent* sceneComponent;
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		class USceneComponent* meshInstances;
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		class USphereComponent* interactionObject;
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		class UStaticMeshComponent* cellRow1;
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		class UStaticMeshComponent* cellRow2;
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		class UBoxComponent* interactionZone;
+
+	UPROPERTY( VisibleAnywhere, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		class UAudioComponent* pickupSound;
+
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		bool bIsPickedUp;
+
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "PaperCutCellRow", meta = ( AllowPrivateAccess = "true" ) )
+		int nPaperIndex;
 	
 };
