@@ -1,1 +1,6 @@
 /*.db
+/Saved/Logs
+/Binaries
+/Saved/Backup
+*.log
+/Intermediate
