@@ -102,6 +102,9 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = DialogOpen)
+	bool isDialogOpen;
+	
 private:
 	void CenterMousePosition( const UObject* WorldContextObject );
 };

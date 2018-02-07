@@ -52,6 +52,7 @@ void AMyProjectCharacter::BeginPlay()
 	// Call the base class  
 	Super::BeginPlay();
 
+	isDialogOpen = false;
 	CenterMousePosition( GetWorld() );
 
 }
@@ -60,6 +61,7 @@ void AMyProjectCharacter::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
 
+	if(!isDialogOpen)
 	CenterMousePosition( GetWorld() );
 }
 
