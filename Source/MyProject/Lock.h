@@ -23,6 +23,12 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION( BlueprintCallable, Category = "CellDoor" )
+		FORCEINLINE bool IsLocked() const { return bIsLocked; }
+
+	UFUNCTION( BlueprintCallable, Category = "CellDoor" )
+		void SetLocked( bool _state );
+
 private:
 
 	UPROPERTY( VisibleAnywhere, Category = "Lock", meta = ( AllowPrivateAccess = "true" ) )
@@ -49,7 +55,8 @@ private:
 	UPROPERTY( VisibleAnywhere, Category = "Lock", meta = ( AllowPrivateAccess = "true" ) )
 		class UAudioComponent* spinSound;
 
-	bool isLocked;
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		bool bIsLocked;
 
 	int firstWheelValue;
 	int secondWheelValue;

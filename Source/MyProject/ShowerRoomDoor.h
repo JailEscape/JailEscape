@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "GameFramework/Actor.h"
 #include "ShowerRoomDoor.generated.h"
 
@@ -23,6 +23,30 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	
+	UFUNCTION( BlueprintCallable, Category = "CellDoor" )
+		FORCEINLINE bool IsLocked() const { return bIsLocked; }
+
+	UFUNCTION( BlueprintCallable, Category = "CellDoor" )
+		void SetLocked( bool _state );
+
+private:
+	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		class USceneComponent* sceneComponent;
+
+	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		class UStaticMeshComponent* doorFrame;
+
+	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		class UStaticMeshComponent* door;
+
+	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		class UBoxComponent* interactionZone;
+
+	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		class UAudioComponent* doorSound;
+
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		bool bIsLocked;
+
 	
 };
