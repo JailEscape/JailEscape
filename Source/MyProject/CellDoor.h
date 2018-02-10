@@ -40,6 +40,9 @@ private:
 		class UStaticMeshComponent* door;
 
 	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
+		class UBoxComponent* interactionObject;
+
+	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )
 		class UBoxComponent* interactionZone;
 
 	UPROPERTY( VisibleAnywhere, Category = "CellDoor", meta = ( AllowPrivateAccess = "true" ) )

@@ -14,19 +14,18 @@ ALock::ALock()
 
 	lockMesh = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "Lock" ) );
 	lockMesh->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
-	lockMesh->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
 
 	firstNumWheel = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "FirstWheel" ) );
 	firstNumWheel->AttachToComponent( lockMesh, FAttachmentTransformRules::KeepRelativeTransform );
-	firstNumWheel->RelativeLocation = FVector( -50.0f, -50.0f, 20.0f );
+	firstNumWheel->RelativeLocation = FVector( -5.0f, 0.0f, 0.0f );
 
 	secondNumWheel = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "SecondWheel" ) );
 	secondNumWheel->AttachToComponent( lockMesh, FAttachmentTransformRules::KeepRelativeTransform );
-	secondNumWheel->RelativeLocation = FVector( -50.0f, -50.0f, -10.0f );
+	secondNumWheel->RelativeLocation = FVector( 0.0f, 0.0f, 0.0f );
 
 	thirdNumWheel = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "ThirdWheel" ) );
 	thirdNumWheel->AttachToComponent( lockMesh, FAttachmentTransformRules::KeepRelativeTransform );
-	thirdNumWheel->RelativeLocation = FVector( -50.0f, -50.0f, -40.0f );
+	thirdNumWheel->RelativeLocation = FVector( 5.0f, 0.0f, 0.0f );
 
 	interactionZone = CreateDefaultSubobject<UBoxComponent>( TEXT( "InteractionZone" ) );
 	interactionZone->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
@@ -50,5 +49,10 @@ void ALock::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ALock::SetLocked( bool _state )
+{
+	bIsLocked = _state;
 }
 

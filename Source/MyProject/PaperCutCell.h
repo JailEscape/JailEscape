@@ -59,21 +59,6 @@ private:
 		class UStaticMeshComponent* cell5;
 
 	UPROPERTY( VisibleAnywhere, Category = "PaperCutCell", meta = ( AllowPrivateAccess = "true" ) )
-		class UStaticMeshComponent* cell6;
-
-	UPROPERTY( VisibleAnywhere, Category = "PaperCutCell", meta = ( AllowPrivateAccess = "true" ) )
-		class UStaticMeshComponent* cell7;
-
-	UPROPERTY( VisibleAnywhere, Category = "PaperCutCell", meta = ( AllowPrivateAccess = "true" ) )
-		class UStaticMeshComponent* cell8;
-
-	UPROPERTY( VisibleAnywhere, Category = "PaperCutCell", meta = ( AllowPrivateAccess = "true" ) )
-		class UStaticMeshComponent* cell9;
-
-	UPROPERTY( VisibleAnywhere, Category = "PaperCutCell", meta = ( AllowPrivateAccess = "true" ) )
-		class UStaticMeshComponent* cell10;
-
-	UPROPERTY( VisibleAnywhere, Category = "PaperCutCell", meta = ( AllowPrivateAccess = "true" ) )
 		class UBoxComponent* interactionZone;
 
 	UPROPERTY( VisibleAnywhere, Category = "PaperCutCell", meta = ( AllowPrivateAccess = "true" ) )

@@ -33,21 +33,6 @@ APaperCutCell::APaperCutCell()
 	cell5 = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "CellRow5Mesh" ) );
 	cell5->AttachToComponent( meshInstances, FAttachmentTransformRules::KeepRelativeTransform );
 
-	cell6 = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "CellRow6Mesh" ) );
-	cell6->AttachToComponent( meshInstances, FAttachmentTransformRules::KeepRelativeTransform );
-
-	cell7 = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "CellRow7Mesh" ) );
-	cell7->AttachToComponent( meshInstances, FAttachmentTransformRules::KeepRelativeTransform );
-
-	cell8 = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "CellRow8Mesh" ) );
-	cell8->AttachToComponent( meshInstances, FAttachmentTransformRules::KeepRelativeTransform );
-
-	cell9 = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "CellRow9Mesh" ) );
-	cell9->AttachToComponent( meshInstances, FAttachmentTransformRules::KeepRelativeTransform );
-
-	cell10 = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "CellRow10Mesh" ) );
-	cell10->AttachToComponent( meshInstances, FAttachmentTransformRules::KeepRelativeTransform );
-
 	interactionZone = CreateDefaultSubobject<UBoxComponent>( TEXT( "InteractionZone" ) );
 	interactionZone->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
 

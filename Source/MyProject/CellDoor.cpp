@@ -14,9 +14,14 @@ ACellDoor::ACellDoor()
 
 	doorFrame = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "DoorFrame" ) );
 	doorFrame->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
+	doorFrame->RelativeLocation = FVector( 0.0f, 0.0f, 0.0f );
 
 	door = CreateDefaultSubobject<UStaticMeshComponent>( TEXT( "Door" ) );
 	door->AttachToComponent( doorFrame, FAttachmentTransformRules::KeepRelativeTransform );
+	door->RelativeLocation = FVector( 0.0f, 0.0f, 0.0f );
+
+	interactionObject = CreateDefaultSubobject<UBoxComponent>( TEXT( "InteractionObject" ) );
+	interactionObject->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
 
 	interactionZone = CreateDefaultSubobject<UBoxComponent>( TEXT( "InteractionZone" ) );
 	interactionZone->AttachToComponent( sceneComponent, FAttachmentTransformRules::KeepRelativeTransform );
